@@ -1,6 +1,6 @@
-# ☕ Java DSA – NMIMS
-
 <div align="center">
+
+# ☕ Java DSA – NMIMS
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge)

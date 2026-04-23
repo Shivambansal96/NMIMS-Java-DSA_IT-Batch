@@ -5,13 +5,13 @@
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge)
 ![Students](https://img.shields.io/badge/NMIMS-Engineering%20Students-blue?style=for-the-badge)
-![Batch](https://img.shields.io/badge/Batch-IT%20&%20CE%20(Batch%202)-red?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Day%203-Completed-brightgreen?style=for-the-badge)
+![Batch](https://img.shields.io/badge/Batch-IT%20&%20CE%20(Batch%202)%20&%20CS%20(Batch%204)-red?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Day%204-Completed-brightgreen?style=for-the-badge)
 ![Training](https://img.shields.io/badge/Training-In%20Progress-success?style=for-the-badge)
 
 ### 🚀 *Master Data Structures & Algorithms with Java!*
 
-**Welcome to your comprehensive DSA learning journey!**  
+**Welcome to your comprehensive DSA learning journey!**
 Everything you need to ace coding interviews and become a problem-solving expert.
 
 [📚 Start Learning](#-topics-covered) • [💻 Problems Solved](#-problems-covered---day-1) • [🎯 What's Next](#-whats-coming-next)
@@ -92,15 +92,36 @@ Day 3 - Queue, Comparators & Advanced Techniques:
 ✅ Maximum Sum Subarray of size K
 
 Day 4 - Recursion & Pattern Matching:
+████████████████████████████████ 100%
+
+✅ Regular Expressions (Pattern Matching)
+✅ RegEx Special Codes (\d, \w, \s, \D, \W, \S, etc.)
+✅ Character Classes & Quantifiers ([A-Z], {n}, +, *, ?, etc.)
+✅ Pattern & Matcher in Java - Pattern.compile()
+✅ Matcher Methods - matches(), find(), group()
+✅ Real-world RegEx Examples (Emails, URLs, Phone Numbers)
+✅ Recursion Basics & Base Cases
+✅ Understanding Call Stack & Dry Run
+✅ Recursion Problems: 1 to N & N to 1
+✅ Sum of N Natural Numbers (Recursive)
+✅ Factorial (Recursive Implementation)
+✅ Permutation Calculation (P(n,r) = n!/(n-r)!)
+✅ Combination Calculation (C(n,r) = n!/(r!(n-r)!))
+✅ Quick Sort (Recursive Implementation)
+✅ Problem Solving & Practice
+
+Day 5 - LinkedList (Singly, Doubly, Circular):
 🔜 IN PROGRESS
 
-⏳ Regular Expressions (Pattern Matching)
-⏳ Recursion Basics & Base Cases
-⏳ Recursion with Strings
-⏳ Recursion with Arrays
-⏳ Sorting Using Recursion (Merge Sort, Quick Sort)
-⏳ Advanced Recursion Problems
-⏳ Problem Solving & Practice
+⏳ Singly LinkedList - Creation & Traversal
+⏳ Singly LinkedList - Insertion Operations (Head, Middle, End)
+⏳ Singly LinkedList - Deletion Operations
+⏳ Doubly LinkedList - Node Structure with prev/next pointers
+⏳ Doubly LinkedList - Forward & Backward Traversal
+⏳ Doubly LinkedList - Insertion & Deletion at Both Ends
+⏳ Circular LinkedList - Circular Structure
+⏳ Circular LinkedList - Insertion & Deletion with Circularity
+⏳ Advanced LinkedList Problems & Practice
 ```
 
 ---
@@ -152,7 +173,7 @@ graph TB
     style Day1 fill:#90EE90,stroke:#228B22,stroke-width:3px
     style Day2 fill:#87CEEB,stroke:#4169E1,stroke-width:3px
     style Day3 fill:#FFD700,stroke:#FF8C00,stroke-width:3px
-    style Day4 fill:#FF6B6B,stroke:#DC143C,stroke-width:3px
+    style Day4 fill:#90EE90,stroke:#228B22,stroke-width:3px
 ```
 
 ---
@@ -762,6 +783,770 @@ public class RemoveDuplicates {
 | **Order Preserved** | ✅ Yes | ❌ No |
 | **Code Simplicity** | Simple | Simpler ⭐ |
 | **Use Case** | Learning | Production |
+
+</details>
+
+---
+
+## 📚 Day 4: Regular Expressions & Recursion Mastery
+
+---
+
+<details open>
+<summary><h3>🔤 Regular Expressions - Pattern Matching</h3></summary>
+
+> **Regular Expression (RegEx)** is a pattern used to match and manipulate strings. It's a powerful tool for validation, search, and string replacement.
+
+### 1️⃣ **RegEx Metacharacters - Special Codes**
+
+#### 📊 Common Escape Sequences
+
+| Code | Matches | Example |
+|:----:|:--------|:--------|
+| `\d` | Any digit (0-9) | `\d{3}` matches "123" |
+| `\D` | Any non-digit | `\D+` matches "abc" |
+| `\w` | Word char (a-z, A-Z, 0-9, _) | `\w+` matches "hello_world" |
+| `\W` | Any non-word character | `\W+` matches "@#$" |
+| `\s` | Whitespace (space, tab, newline) | `\s+` matches " " |
+| `\S` | Any non-whitespace | `\S+` matches "hello" |
+
+#### 🔤 Character Classes
+
+```
+[abc]      → Match a, b, or c
+[a-z]      → Match any lowercase letter
+[A-Z]      → Match any uppercase letter
+[0-9]      → Match any digit
+[a-zA-Z0-9] → Alphanumeric
+[^abc]     → Match anything EXCEPT a, b, c
+```
+
+#### ⏲️ Quantifiers
+
+```
+*      → 0 or more occurrences (greedy)
++      → 1 or more occurrences (greedy)
+?      → 0 or 1 occurrence (optional)
+{n}    → Exactly n occurrences
+{n,}   → n or more occurrences
+{n,m}  → Between n and m occurrences
+```
+
+#### 🎯 Anchors & Boundaries
+
+```
+^      → Start of string
+$      → End of string
+\b     → Word boundary
+.      → Any character except newline
+|      → OR operator
+()     → Grouping
+```
+
+---
+
+### 2️⃣ **Pattern & Matcher in Java**
+
+Java uses `java.util.regex` package for regular expressions with two main classes:
+
+**Pattern:** Compiled representation of a regex
+**Matcher:** Engine that performs match operations
+
+```java
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class RegExDemo {
+    public static void main(String[] args) {
+        // Step 1: Compile the pattern
+        Pattern pattern = Pattern.compile("[A-Za-z]+");
+        
+        // Step 2: Create matcher with input string
+        Matcher matcher = pattern.matcher("Subscribe");
+        
+        // Step 3: Test the string
+        boolean result = matcher.matches();  // Check if ENTIRE string matches
+        System.out.println(result);  // true (only letters)
+    }
+}
+```
+
+**Output:** `true`
+
+---
+
+### 3️⃣ **Matcher Methods**
+
+#### `matches()` - Entire String Match
+
+```java
+Pattern pat = Pattern.compile("[A-Za-z]+");
+Matcher mat = pat.matcher("Subscribe");
+boolean res = mat.matches();  // true - entire string is letters
+System.out.println(res);
+```
+
+#### `find()` - Find Pattern Occurrence
+
+```java
+Pattern pat = Pattern.compile("\\d+");  // Find digits
+Matcher mat = pat.matcher("abc123def456");
+
+while(mat.find()) {
+    System.out.println(mat.group());  // Prints: 123, 456
+}
+```
+
+#### `group()` - Get Matched Text
+
+```java
+Pattern pat = Pattern.compile("([A-Z][a-z]+)");
+Matcher mat = pat.matcher("ShineVerse");
+
+if(mat.find()) {
+    System.out.println(mat.group());  // Prints: Shine
+}
+```
+
+---
+
+### 4️⃣ **Real-World RegEx Examples**
+
+#### 📧 Email Validation
+
+```java
+Pattern emailPattern = Pattern.compile(
+    "[a-zA-z0-9]+[.-]?[a-z0-9]+[-]?[a-z]*@{1}[a-z]+-?[a-z]*[.][a-z]+"
+);
+
+String[] emails = {
+    "ShivamRBansal@gmail.com",
+    "shivam.bansal@university.edu",
+    "shivam-1216-bansal@my-work.net",
+    "anushka-123242-mehta@china.online"
+};
+
+for(String email : emails) {
+    Matcher mat = emailPattern.matcher(email);
+    System.out.println(email + ": " + mat.matches());
+}
+```
+
+**Output:**
+```
+ShivamRBansal@gmail.com: true
+shivam.bansal@university.edu: true
+shivam-1216-bansal@my-work.net: true
+anushka-123242-mehta@china.online: true
+```
+
+#### 📱 Phone Number Validation
+
+```java
+Pattern phonePattern = Pattern.compile("\\d{3}-\\d{3}-\\d{4}");
+String phone = "615-555-7164";
+Matcher mat = phonePattern.matcher(phone);
+System.out.println(mat.matches());  // true
+```
+
+#### 🌐 URL Extraction
+
+```java
+Pattern urlPattern = Pattern.compile("https?://[\\w/.-]+");
+String text = "Visit https://example.com or http://test.org";
+Matcher mat = urlPattern.matcher(text);
+
+while(mat.find()) {
+    System.out.println(mat.group());  // Extracts URLs
+}
+```
+
+---
+
+### 5️⃣ **Pattern Matching Practice**
+
+```java
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
+
+public class RegExPractice {
+    public static void main(String[] args) {
+        // Only uppercase letters - exactly 5
+        Pattern pat1 = Pattern.compile("[A-Z]{5}");
+        System.out.println(pat1.matcher("AAAAA").matches());  // true
+        System.out.println(pat1.matcher("AAAA").matches());   // false
+        
+        // Camel case: Capital followed by lowercase (twice)
+        Pattern pat2 = Pattern.compile("([A-Z][a-z]+){2}");
+        System.out.println(pat2.matcher("ShineVerse").matches());  // true
+        System.out.println(pat2.matcher("shineverse").matches());  // false
+        
+        // Extract digits
+        Pattern pat3 = Pattern.compile("\\d+");
+        Matcher mat3 = pat3.matcher("abc123def456");
+        while(mat3.find()) {
+            System.out.println(mat3.group());  // 123, 456
+        }
+    }
+}
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔀 Recursion Fundamentals</h3></summary>
+
+> **Recursion** is a programming technique where a function calls itself directly or indirectly. Every recursive function must have a **base case** to stop recursion.
+
+### 1️⃣ **Recursion Basics - Key Concepts**
+
+#### 🎯 Components of Recursion
+
+1. **Base Case:** Condition that stops recursion
+2. **Recursive Case:** Function calls itself with modified parameters
+3. **Call Stack:** Stores function calls in memory
+
+#### 📚 Example: Print Numbers 1 to N
+
+```java
+public class RecursionBasics {
+    
+    // Print 1, 2, 3, ..., n
+    public static void print1ToN(int i, int n) {
+        // Base case: stop when i exceeds n
+        if (i == n + 1)
+            return;
+        
+        // Recursive case
+        System.out.println(i);
+        print1ToN(i + 1, n);  // Call with i+1
+    }
+    
+    public static void main(String[] args) {
+        print1ToN(1, 10);
+        // Output: 1 2 3 4 5 6 7 8 9 10
+    }
+}
+```
+
+#### 🔄 Dry Run: `print1ToN(1, 3)`
+
+```
+Call Stack Visualization:
+
+print1ToN(1,3) → i=1, print 1
+  print1ToN(2,3) → i=2, print 2
+    print1ToN(3,3) → i=3, print 3
+      print1ToN(4,3) → i=4, base case reached
+        return
+      
+Output: 1 2 3
+```
+
+#### 🔀 Print N to 1 (Reverse Order)
+
+```java
+public class RecursionReverse {
+    
+    public static void printNTo1(int n) {
+        // Base case
+        if (n == 0)
+            return;
+        
+        // Print before recursion
+        System.out.println(n);
+        printNTo1(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        printNTo1(5);
+        // Output: 5 4 3 2 1
+    }
+}
+```
+
+#### 📊 Dry Run: `printNTo1(3)`
+
+```
+printNTo1(3) → print 3
+  printNTo1(2) → print 2
+    printNTo1(1) → print 1
+      printNTo1(0) → base case
+        return
+      
+Output: 3 2 1
+```
+
+---
+
+### 2️⃣ **Call Stack Visualization**
+
+#### 🎯 Understanding How Recursion Works
+
+```java
+public class CallStackDemo {
+    
+    public static void demo(int n) {
+        System.out.println("Before Fn = " + n);
+        
+        if (n == 0) {
+            System.out.println("----- Base Case -----");
+            return;
+        }
+        
+        demo(n - 1);  // Go deeper
+        System.out.println("After Fn = " + n);
+    }
+    
+    public static void main(String[] args) {
+        demo(3);
+    }
+}
+```
+
+**Call Stack Visualization:**
+
+```
+demo(3) called
+├─ prints: "Before Fn = 3"
+│
+├─ demo(2) called
+│ ├─ prints: "Before Fn = 2"
+│ │
+│ ├─ demo(1) called
+│ │ ├─ prints: "Before Fn = 1"
+│ │ │
+│ │ ├─ demo(0) called
+│ │ │ ├─ prints: "Before Fn = 0"
+│ │ │ ├─ prints: "----- Base Case -----"
+│ │ │ └─ RETURN ↓↓↓
+│ │ │
+│ │ ├─ prints: "After Fn = 1"
+│ │ └─ RETURN
+│ │
+│ ├─ prints: "After Fn = 2"
+│ └─ RETURN
+│
+├─ prints: "After Fn = 3"
+└─ RETURN
+
+OUTPUT:
+Before Fn = 3
+Before Fn = 2
+Before Fn = 1
+Before Fn = 0
+----- Base Case -----
+After Fn = 1
+After Fn = 2
+After Fn = 3
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📝 Recursion Problem 1: Sum of N Natural Numbers</h3></summary>
+
+> **Problem:** Calculate the sum of first N natural numbers (1 + 2 + 3 + ... + N) using recursion.
+
+### 1️⃣ **Method 1: With Accumulator Parameter**
+
+```java
+public class SumOfN_Method1 {
+    
+    public static void sumOfN(int n, int currSum) {
+        // Base case: when n becomes 0, print the sum
+        if (n == 0) {
+            System.out.println("Sum = " + currSum);
+            return;
+        }
+        
+        // Recursive case: add n to currSum and call with n-1
+        sumOfN(n - 1, currSum + n);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5;
+        sumOfN(n, 0);  // Start with sum = 0
+        // Output: Sum = 15  (1+2+3+4+5)
+    }
+}
+```
+
+**Dry Run: `sumOfN(5, 0)`**
+
+```
+sumOfN(5, 0) → Add 5: sumOfN(4, 5)
+sumOfN(4, 5) → Add 4: sumOfN(3, 9)
+sumOfN(3, 9) → Add 3: sumOfN(2, 12)
+sumOfN(2, 12) → Add 2: sumOfN(1, 14)
+sumOfN(1, 14) → Add 1: sumOfN(0, 15)
+sumOfN(0, 15) → Print "Sum = 15"
+
+Output: Sum = 15
+```
+
+---
+
+### 2️⃣ **Method 2: Return Value from Recursion**
+
+```java
+public class SumOfN_Method2 {
+    
+    public static int sumOfN(int n) {
+        // Base case
+        if (n == 0) {
+            return 0;
+        }
+        
+        // Recursive case: return n + sum of (n-1)
+        return n + sumOfN(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5;
+        int result = sumOfN(n);
+        System.out.println(result);  // 15
+    }
+}
+```
+
+**Dry Run: `sumOfN(5)`**
+
+```
+sumOfN(5) = 5 + sumOfN(4)
+           = 5 + (4 + sumOfN(3))
+           = 5 + (4 + (3 + sumOfN(2)))
+           = 5 + (4 + (3 + (2 + sumOfN(1))))
+           = 5 + (4 + (3 + (2 + (1 + sumOfN(0)))))
+           = 5 + (4 + (3 + (2 + (1 + 0))))
+           = 5 + (4 + (3 + (2 + 1)))
+           = 5 + (4 + (3 + 3))
+           = 5 + (4 + 6)
+           = 5 + 10
+           = 15
+```
+
+**Call Stack Visualization:**
+
+```
+Level 1: sumOfN(5)
+         ↓ (waiting for sumOfN(4))
+Level 2: sumOfN(4)
+         ↓ (waiting for sumOfN(3))
+Level 3: sumOfN(3)
+         ↓ (waiting for sumOfN(2))
+Level 4: sumOfN(2)
+         ↓ (waiting for sumOfN(1))
+Level 5: sumOfN(1)
+         ↓ (waiting for sumOfN(0))
+Level 6: sumOfN(0) → Returns 0
+         ↑ (returns 1+0=1)
+Level 5: returns 2+1=3
+         ↑ (returns 3+3=6)
+Level 4: returns 4+6=10
+         ↑ (returns 5+10=15)
+Level 3: returns 15
+
+Final Result: 15
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔢 Advanced Recursion: Factorial, Permutation, Combination</h3></summary>
+
+> **Factorial** is the basis for permutation and combination calculations in combinatorics.
+
+### 1️⃣ **Factorial - n!**
+
+**Definition:** n! = n × (n-1) × (n-2) × ... × 1
+
+```java
+public class Factorial {
+    
+    public static int fact(int n) {
+        // Base case
+        if (n == 1 || n == 0) {
+            return 1;
+        }
+        
+        // Recursive case: n! = n * (n-1)!
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("5! = " + fact(5));   // 120
+        System.out.println("0! = " + fact(0));   // 1
+        System.out.println("10! = " + fact(10)); // 3628800
+    }
+}
+```
+
+**Dry Run: `fact(5)`**
+
+```
+fact(5) = 5 * fact(4)
+        = 5 * (4 * fact(3))
+        = 5 * (4 * (3 * fact(2)))
+        = 5 * (4 * (3 * (2 * fact(1))))
+        = 5 * (4 * (3 * (2 * 1)))
+        = 5 * (4 * (3 * 2))
+        = 5 * (4 * 6)
+        = 5 * 24
+        = 120
+```
+
+---
+
+### 2️⃣ **Permutation - P(n, r)**
+
+**Definition:** P(n,r) = n! / (n-r)!
+
+Permutation is an arrangement of n objects taken r at a time, where **order matters**.
+
+```java
+public class Permutation {
+    
+    public static int fact(int n) {
+        if (n == 1 || n == 0) {
+            return 1;
+        }
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5;
+        int r = 3;
+        
+        // P(5,3) = 5! / (5-3)! = 120 / 2 = 60
+        int numerator = fact(n);        // 5! = 120
+        int denominator = fact(n - r);  // 2! = 2
+        int perm = numerator / denominator;
+        
+        System.out.println("P(" + n + "," + r + ") = " + perm);
+        // Output: P(5,3) = 60
+    }
+}
+```
+
+**Example: Arrange 5 students in 3 positions**
+
+```
+P(5,3) = 5!/(5-3)! = 5!/2! = 120/2 = 60
+
+This means:
+- Position 1: Choose from 5 students
+- Position 2: Choose from remaining 4 students
+- Position 3: Choose from remaining 3 students
+- Total: 5 × 4 × 3 = 60 ways
+```
+
+---
+
+### 3️⃣ **Combination - C(n, r)**
+
+**Definition:** C(n,r) = n! / (r! × (n-r)!)
+
+Combination is a selection of n objects taken r at a time, where **order doesn't matter**.
+
+```java
+public class Combination {
+    
+    public static int fact(int n) {
+        if (n == 1 || n == 0) {
+            return 1;
+        }
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5;
+        int r = 3;
+        
+        // C(5,3) = 5! / (3! × (5-3)!) = 120 / (6 × 2) = 10
+        int numerator = fact(n);           // 5! = 120
+        int denominator = fact(r) * fact(n - r);  // 3! × 2! = 6 × 2 = 12
+        int comb = numerator / denominator;
+        
+        System.out.println("C(" + n + "," + r + ") = " + comb);
+        // Output: C(5,3) = 10
+    }
+}
+```
+
+**Example: Choose 3 fruits from 5 types**
+
+```
+C(5,3) = 5!/(3! × 2!) = 120/(6 × 2) = 10
+
+Different ways to choose 3 from {Apple, Banana, Orange, Mango, Grapes}:
+1. Apple, Banana, Orange
+2. Apple, Banana, Mango
+3. Apple, Banana, Grapes
+4. Apple, Orange, Mango
+5. Apple, Orange, Grapes
+6. Apple, Mango, Grapes
+7. Banana, Orange, Mango
+8. Banana, Orange, Grapes
+9. Banana, Mango, Grapes
+10. Orange, Mango, Grapes
+
+Total: 10 combinations
+```
+
+---
+
+### 📊 Permutation vs Combination
+
+| Aspect | Permutation | Combination |
+|:-------|:-----------:|:----------:|
+| **Order** | Matters ✅ | Doesn't matter ❌ |
+| **Formula** | P(n,r) = n!/(n-r)! | C(n,r) = n!/(r!(n-r)!) |
+| **Example** | Arranging books | Selecting books |
+| **Example Value** | P(5,3) = 60 | C(5,3) = 10 |
+| **Use Case** | Passwords, rankings | Teams, committees |
+
+</details>
+
+---
+
+<details open>
+<summary><h3>⚡ Quick Sort - Recursive Implementation</h3></summary>
+
+> **Quick Sort** is a divide-and-conquer sorting algorithm that partitions array around a pivot and recursively sorts the partitions.
+
+### 🎯 Quick Sort Algorithm
+
+1. Pick a **pivot** element
+2. Partition: elements smaller go left, larger go right
+3. Recursively sort left and right partitions
+4. Combine
+
+**Time Complexity:** O(n log n) average, O(n²) worst case
+**Space Complexity:** O(log n) - recursion stack
+
+### 1️⃣ **Simple Quick Sort Implementation**
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class QuickSort {
+    
+    public static ArrayList<Integer> quickSort(ArrayList<Integer> arr) {
+        // Base case: array with 0 or 1 element is already sorted
+        if (arr.size() <= 1) {
+            return arr;
+        }
+        
+        // Choose pivot as first element
+        int pivot = arr.get(0);
+        ArrayList<Integer> small = new ArrayList<>();
+        ArrayList<Integer> big = new ArrayList<>();
+        
+        // Partition: separate smaller and larger elements
+        for (int i = 1; i < arr.size(); i++) {
+            if (arr.get(i) > pivot) {
+                big.add(arr.get(i));
+            } else {
+                small.add(arr.get(i));
+            }
+        }
+        
+        // Recursively sort and combine
+        ArrayList<Integer> result = new ArrayList<>();
+        result.addAll(quickSort(big));    // Larger elements first (descending)
+        result.add(pivot);                // Add pivot in middle
+        result.addAll(quickSort(small));  // Smaller elements last
+        
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>(
+            Arrays.asList(45, 13, 44, 99, 98, 1, 47)
+        );
+        
+        System.out.println("Original: " + arr);
+        ArrayList<Integer> sorted = quickSort(arr);
+        System.out.println("Sorted: " + sorted);
+        // Output: [99, 98, 47, 45, 44, 13, 1] (descending)
+    }
+}
+```
+
+**Output:**
+```
+Original: [45, 13, 44, 99, 98, 1, 47]
+Sorted: [99, 98, 47, 45, 44, 13, 1]
+```
+
+---
+
+### 2️⃣ **Dry Run: `quickSort([45, 13, 44, 99, 98, 1, 47])`**
+
+```
+Initial: [45, 13, 44, 99, 98, 1, 47], pivot=45
+
+Partition:
+- Small (≤45): [13, 44, 1]
+- Big (>45): [99, 98, 47]
+
+Result = quickSort(Big) + [45] + quickSort(Small)
+
+Sorting Big [99, 98, 47]:
+  Pivot=99
+  Small=[98, 47], Big=[]
+  Result = quickSort([]) + [99] + quickSort([98, 47])
+  
+  Sorting [98, 47]:
+    Pivot=98
+    Small=[47], Big=[]
+    Result = [] + [98] + [47] = [98, 47]
+  
+  So Big sorted = [] + [99] + [98, 47] = [99, 98, 47]
+
+Sorting Small [13, 44, 1]:
+  Pivot=13
+  Small=[1], Big=[44]
+  Result = quickSort([44]) + [13] + quickSort([1])
+  
+  Sorting [44]: Returns [44] (size 1)
+  Sorting [1]: Returns [1] (size 1)
+  
+  So Small sorted = [44] + [13] + [1] = [44, 13, 1]
+
+Final Result = [99, 98, 47] + [45] + [44, 13, 1]
+             = [99, 98, 47, 45, 44, 13, 1]
+```
+
+---
+
+### 📊 Quick Sort Visualization
+
+```
+Original: [45, 13, 44, 99, 98, 1, 47]
+
+         45
+        /  \
+    [13,44,1] [99,98,47]
+    /          \
+   13          99
+  /  \        /  \
+[1] [44]    [98,47] []
+           /
+          98
+         /  \
+      [47]  []
+
+Result (In-Order): 99, 98, 47, 45, 44, 13, 1
+```
 
 </details>
 
@@ -2407,6 +3192,45 @@ Use Array when:
 
 ---
 
+## ✅ Problems Covered - Day 4
+
+### 📋 **Regular Expressions & Recursion**
+
+| # | Problem | Difficulty | Concept | Status | Description |
+|:-:|:--------|:----------:|:--------|:------:|:-----|
+| 1 | Regex Pattern Basics | 🟢 Easy | Pattern Matching | ✅ | Compile patterns, use matches() with character classes |
+| 2 | Email Validation | 🟡 Medium | Regex Patterns | ✅ | Validate emails using regex with quantifiers and character classes |
+| 3 | Character Classes & Quantifiers | 🟡 Medium | RegEx Syntax | ✅ | Use [A-Z], \d, \w, {n}, +, *, ? in patterns |
+| 4 | Print 1 to N | 🟢 Easy | Basic Recursion | ✅ | Recursive function with base case to print numbers in ascending order |
+| 5 | Print N to 1 | 🟢 Easy | Recursion Order | ✅ | Reverse order printing using recursion (call before print vs after) |
+| 6 | Sum of N Natural Numbers | 🟡 Medium | Accumulator Pattern | ✅ | Calculate sum using accumulator parameter or return value approach |
+| 7 | Factorial | 🟡 Medium | Recursion Basics | ✅ | Implement n! = n × (n-1)! with base case at 0 or 1 |
+| 8 | Permutation P(n,r) | 🟠 Hard | Combinatorics | ✅ | Calculate arrangements using P(n,r) = n!/(n-r)! formula |
+| 9 | Combination C(n,r) | 🟠 Hard | Combinatorics | ✅ | Calculate selections using C(n,r) = n!/(r!(n-r)!) formula |
+| 10 | Quick Sort | 🟠 Hard | Recursive Sorting | ✅ | Divide-and-conquer: partition around pivot and recursively sort |
+
+### 📝 Key Learnings from Day 4
+
+**Regular Expressions:**
+- Used Pattern.compile() to create compiled regex patterns
+- Tested with `matches()` for exact string match, `find()` for substring search
+- Applied to real-world validation: emails, phone numbers, URLs
+- Practiced with data files: emails.txt, urls.txt, phone numbers in data.txt
+
+**Recursion Fundamentals:**
+- Every recursion needs a **base case** to prevent infinite calls
+- **Call stack** visualization helps understand function execution order
+- Two approaches: tail recursion (accumulator) vs return value recursion
+- Performed dry runs on paper for 1-N, N-1, and sum problems
+
+**Advanced Recursion:**
+- Used factorial as foundation for permutation and combination
+- Understood combinatorics: P(n,r) with order, C(n,r) without order
+- Implemented Quick Sort using divide-and-conquer recursion
+- Analyzed time complexity: O(n log n) average, O(n²) worst case
+
+---
+
 ## 📝 Important Code Snippets
 
 ### Import Statements You'll Need
@@ -2432,11 +3256,12 @@ import java.util.*;
 
 ## 🚀 Next Steps
 
-1. **Review** - Re-read Day 1 materials
-2. **Practice** - Solve ArrayList problems on LeetCode
-3. **Experiment** - Modify examples and see what breaks
-4. **Prepare** - Get ready for Day 2 (Sets, Maps, Queues)
-5. **Ask** - Clarify any doubts before moving forward
+1. **Review Day 4** - Re-read RegEx and Recursion materials
+2. **Practice RegEx** - Validate emails, phones, URLs on your own data
+3. **Trace Recursion** - Dry run recursive functions on paper
+4. **Solve Problems** - Implement factorial, permutation, combination
+5. **Code QuickSort** - Implement and trace on different arrays
+6. **Prepare Day 5** - Review LinkedList concepts before next session
 
 ---
 

@@ -1,9 +1,4 @@
 
-import java.util.HashSet;
-
-
-// public class Day6LL {
-//     Node head;
 //     class Node {
 //         int data;
 //         Node next;
@@ -165,8 +160,6 @@ import java.util.HashSet;
 //         list.printList();
 //     }
 // }
-
-
 public class Day6LL {
 
     Node head;
@@ -254,23 +247,47 @@ public class Day6LL {
 
     public void printList() {
         Node currentNode = head;
-        HashSet<Node> set =new HashSet<>();
-        while (!set.contains(currentNode)) {
-            set.add(currentNode);
+        while (currentNode != tail) {
             System.out.print(currentNode.data + " -> ");
             currentNode = currentNode.next;
-
+            
         }
+        System.out.print(tail.data + " -> ");
         System.out.println("null");
     }
+
+    
+    public void reverseList() {
+        Node currentNode = tail;
+        while (currentNode != head) {
+            System.out.print(currentNode.data + " -> ");
+            currentNode = currentNode.prev;
+            
+        }
+        System.out.print(head.data + " -> ");
+        System.out.println("null");
+    }
+
+    // public void printList() {
+    //     HashSet<Node> set = new HashSet<>();
+    //     Node currentNode = head;
+    //     // while (currentNode != null) {
+    //     while(!set.contains(currentNode)){
+    //         set.add(currentNode);
+    //         System.out.print(currentNode.data + " -> ");
+    //         currentNode = currentNode.next;
+
+    //     }
+    //     System.out.println("null");
+    // }
 
     public static void main(String[] args) {
         Day6LL list = new Day6LL();
 
         list.append(38);
-        // list.prepend(40);
+        list.prepend(40);
         list.append(4);
-        // list.prepend(1221);
+        list.prepend(1221);
         // list.prepend(33);
 
         list.printList();

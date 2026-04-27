@@ -6,7 +6,7 @@
 ![Status](https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge)
 ![Students](https://img.shields.io/badge/NMIMS-Engineering%20Students-blue?style=for-the-badge)
 ![Batch](https://img.shields.io/badge/Batch-IT%20&%20CE%20(Batch%202)%20&%20CS%20(Batch%204)-red?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Day%206-Completed-brightgreen?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Day%208-Completed-brightgreen?style=for-the-badge)
 ![Training](https://img.shields.io/badge/Training-In%20Progress-success?style=for-the-badge)
 
 ### 🚀 *Master Data Structures & Algorithms with Java!*
@@ -124,20 +124,44 @@ Day 6 - Stack Implementation:
 ████████████████████████████████ 100%
 
 ✅ Stack - Array Implementation
-✅ Stack - ArrayList Implementation  
+✅ Stack - ArrayList Implementation
 ✅ Stack - LinkedList Implementation
 ✅ Stack using Collections Framework
 ✅ Valid Parentheses Problem (using Stack)
 ✅ Problem Solving & Practice
 
 Day 7 - Prefix, Infix, Postfix & Queue:
+████████████████████████████████ 100%
+
+✅ Prefix, Infix, Postfix Notation - Concepts & Conversions
+✅ Queue Implementations using LinkedList
+✅ Queue Implementations using ArrayList
+✅ Queue Implementations using Array
+✅ Deque (Double Ended Queue) Operations
+✅ Circular Queue Implementation
+✅ Queue-based Problem Solving
+
+Day 8 - Binary Trees:
+████████████████████████████████ 100%
+
+✅ Binary Trees - All Concepts
+✅ Different Types of Binary Trees (Full, Complete, Perfect, etc.)
+✅ Binary Tree Creation using Array Input
+✅ Tree Traversals - PreOrder Traversal
+✅ Tree Traversals - InOrder Traversal
+✅ Tree Traversals - PostOrder Traversal
+✅ Sum of All Nodes in Tree
+✅ Height of Binary Tree
+✅ Problem Solving & Practice
+
+Day 9 - BST & Graph Introduction:
 🔜 IN PROGRESS
 
-⏳ Prefix, Infix, Postfix Notation - Concepts & Conversions
-⏳ Queue - LinkedList Implementation
-⏳ Queue using Collections Framework
-⏳ Deque (Double Ended Queue) Operations
-⏳ Queue-based Problem Solving
+⏳ Binary Search Tree (BST) Creation
+⏳ BST Traversals
+⏳ BST Search, Insert, Delete Operations
+⏳ Graph Introduction - Basics & Terminology
+⏳ Graph Representations (Adjacency Matrix & List)
 ```
 
 ---
@@ -199,16 +223,38 @@ graph TB
         AN --> AO["🏗️ Deque Operations"]
     end
     
+    subgraph Day8["📅 DAY 8: Binary Trees"]
+        AP["🌳 Tree Basics"] --> AQ["📊 Tree Types"]
+        AQ --> AR["🏗️ Tree Creation"]
+        AR --> AS["↔️ PreOrder"]
+        AS --> AT["↔️ InOrder"]
+        AT --> AU["↔️ PostOrder"]
+        AU --> AV["📈 Tree Operations"]
+    end
+    
+    subgraph Day9["📅 DAY 9: BST & Graphs"]
+        AW["🌳 BST Basics"] --> AX["🔍 BST Search"]
+        AX --> AY["➕ BST Insert"]
+        AY --> AZ["➖ BST Delete"]
+        AZ --> BA["📊 Graph Intro"]
+    end
+    
     F --> G
     M --> N
     U --> V
     U --> AC
     AH --> AI
+    AO --> AP
+    AV --> AW
     
     style Day1 fill:#90EE90,stroke:#228B22,stroke-width:3px
     style Day2 fill:#87CEEB,stroke:#4169E1,stroke-width:3px
     style Day3 fill:#FFD700,stroke:#FF8C00,stroke-width:3px
     style Day4 fill:#90EE90,stroke:#228B22,stroke-width:3px
+    style Day6 fill:#DDA0DD,stroke:#8B008B,stroke-width:3px
+    style Day7 fill:#FFB6C1,stroke:#FF1493,stroke-width:3px
+    style Day8 fill:#98FB98,stroke:#228B22,stroke-width:3px
+    style Day9 fill:#87CEEB,stroke:#4169E1,stroke-width:3px
 ```
 
 ---
@@ -2901,6 +2947,1402 @@ Result: Invalid!
 | 3 | Stack LinkedList Implementation | 🟡 Medium | Pointer-based | ✅ |
 | 4 | Stack Collections Framework | 🟢 Easy | Built-in Stack class | ✅ |
 | 5 | Valid Parentheses Problem | 🟡 Medium | Stack matching | ✅ |
+
+---
+
+# 📅 DAY 7: Prefix, Infix, Postfix & Queue
+
+## 📚 DAY 7 - Topics
+
+---
+
+<details open>
+<summary><h3>🔤 Prefix, Infix, Postfix Notation</h3></summary>
+
+> **Notation** refers to the order in which operators and operands are written in an expression.
+
+### 1️⃣ **Infix Notation (Standard)**
+
+**Infix** is the notation we use in everyday mathematics. The operator is placed **between** the operands.
+
+```
+Format: Operand Operator Operand
+
+Examples:
+2 + 3
+5 * 4
+(2 + 3) * 4
+```
+
+**Characteristics:**
+- ✅ Easy to read for humans
+- ✅ Requires parentheses for precedence
+- ✅ Requires operator precedence rules
+- ❌ Requires parsing to evaluate
+- ❌ Complex for computer processing
+
+#### 🎯 Infix Expression Examples
+
+```java
+2 + 3           // Simple addition
+5 * 4           // Simple multiplication
+2 + 3 * 4       // Requires precedence: 2 + (3*4) = 14
+(2 + 3) * 4     // Parentheses override: (2+3)*4 = 20
+2 + 3 * 4 - 5   // Multiple operators with precedence
+```
+
+---
+
+### 2️⃣ **Postfix Notation (Reverse Polish Notation - RPN)**
+
+**Postfix** is a notation where the operator is placed **after** the operands.
+
+```
+Format: Operand Operand Operator
+
+Examples:
+2 3 +           (equivalent to 2 + 3)
+5 4 *           (equivalent to 5 * 4)
+2 3 + 4 *       (equivalent to (2 + 3) * 4)
+```
+
+**Characteristics:**
+- ✅ No parentheses needed
+- ✅ No operator precedence issues
+- ✅ Easy to evaluate using stack
+- ✅ Efficient for computer processing
+- ❌ Less intuitive for humans
+
+#### 🎯 Postfix Expression Examples
+
+```
+Postfix             Infix               Result
+2 3 +               2 + 3               5
+5 4 *               5 * 4               20
+2 3 + 4 *           (2 + 3) * 4         20
+2 3 4 + *           2 * (3 + 4)         14
+5 3 - 2 /           (5 - 3) / 2         1
+```
+
+#### ⏱️ Evaluating Postfix Expression using Stack
+
+```java
+public class PostfixEvaluation {
+    
+    public static int evaluatePostfix(String[] postfix) {
+        Stack<Integer> stack = new Stack<>();
+        
+        for (String token : postfix) {
+            if (token.matches("\\d+")) {
+                // It's a number - push to stack
+                stack.push(Integer.parseInt(token));
+            } else {
+                // It's an operator - pop two operands, compute, push result
+                int b = stack.pop();  // Second operand (popped first!)
+                int a = stack.pop();  // First operand
+                
+                int result = 0;
+                switch (token) {
+                    case "+": result = a + b; break;
+                    case "-": result = a - b; break;
+                    case "*": result = a * b; break;
+                    case "/": result = a / b; break;
+                }
+                
+                stack.push(result);
+            }
+        }
+        
+        return stack.peek();  // Final result
+    }
+    
+    public static void main(String[] args) {
+        String[] postfix1 = {"2", "3", "+"};
+        String[] postfix2 = {"2", "3", "4", "+", "*"};
+        String[] postfix3 = {"5", "3", "-", "2", "/"};
+        
+        System.out.println("2 3 + = " + evaluatePostfix(postfix1));      // 5
+        System.out.println("2 3 4 + * = " + evaluatePostfix(postfix2));  // 14
+        System.out.println("5 3 - 2 / = " + evaluatePostfix(postfix3));  // 1
+    }
+}
+```
+
+**Dry Run: `["2", "3", "4", "+", "*"]` (Postfix for 2 * (3 + 4))**
+
+```
+Token "2": stack = [2]
+Token "3": stack = [2, 3]
+Token "4": stack = [2, 3, 4]
+Token "+": pop 4 and 3 → 3+4=7 → stack = [2, 7]
+Token "*": pop 7 and 2 → 2*7=14 → stack = [14]
+
+Result: 14
+```
+
+---
+
+### 3️⃣ **Prefix Notation (Polish Notation)**
+
+**Prefix** is a notation where the operator is placed **before** the operands.
+
+```
+Format: Operator Operand Operand
+
+Examples:
++ 2 3           (equivalent to 2 + 3)
+* 5 4           (equivalent to 5 * 4)
+* + 2 3 4       (equivalent to (2 + 3) * 4)
+```
+
+**Characteristics:**
+- ✅ No parentheses needed
+- ✅ Unique evaluation rules
+- ❌ Less commonly used
+- ❌ Requires right-to-left scanning for evaluation
+
+#### 🎯 Prefix Expression Examples
+
+```
+Prefix              Infix               Result
++ 2 3               2 + 3               5
+* 5 4               5 * 4               20
+* + 2 3 4           (2 + 3) * 4         20
+* 2 + 3 4           2 * (3 + 4)         14
+/ - 5 3 2           (5 - 3) / 2         1
+```
+
+---
+
+### 4️⃣ **Infix to Postfix Conversion**
+
+The most common conversion is from Infix to Postfix using the **Shunting Yard Algorithm** with a stack.
+
+#### 🎯 Algorithm Steps
+
+1. Create an empty stack for operators
+2. Create an empty queue for output
+3. For each token in infix expression:
+   - If it's a number → add to output queue
+   - If it's an operator → pop higher/equal precedence operators to queue, then push current
+   - If it's '(' → push to stack
+   - If it's ')' → pop operators to queue until '(' found
+4. Pop remaining operators to queue
+
+#### 🔧 Implementation
+
+```java
+import java.util.*;
+
+public class InfixToPostfix {
+    
+    // Get operator precedence (higher number = higher precedence)
+    public static int precedence(char op) {
+        switch (op) {
+            case '+':
+            case '-': return 1;
+            case '*':
+            case '/': return 2;
+            case '^': return 3;  // Exponentiation
+            default: return -1;
+        }
+    }
+    
+    // Check if operator is right-associative
+    public static boolean isRightAssociative(char op) {
+        return op == '^';  // Only exponentiation is right-associative
+    }
+    
+    public static String infixToPostfix(String infix) {
+        StringBuilder postfix = new StringBuilder();
+        Stack<Character> stack = new Stack<>();
+        
+        for (int i = 0; i < infix.length(); i++) {
+            char ch = infix.charAt(i);
+            
+            if (Character.isDigit(ch)) {
+                // Number - add to output
+                postfix.append(ch).append(" ");
+            } else if (ch == '(') {
+                // Left parenthesis - push to stack
+                stack.push(ch);
+            } else if (ch == ')') {
+                // Right parenthesis - pop until '(' found
+                while (!stack.isEmpty() && stack.peek() != '(') {
+                    postfix.append(stack.pop()).append(" ");
+                }
+                stack.pop();  // Remove '('
+            } else if (ch == '+' || ch == '-' || ch == '*' || ch == '/' || ch == '^') {
+                // Operator
+                while (!stack.isEmpty() && 
+                       stack.peek() != '(' &&
+                       precedence(stack.peek()) > precedence(ch) ||
+                       (precedence(stack.peek()) == precedence(ch) && 
+                        !isRightAssociative(ch))) {
+                    postfix.append(stack.pop()).append(" ");
+                }
+                stack.push(ch);
+            }
+        }
+        
+        // Pop remaining operators
+        while (!stack.isEmpty()) {
+            postfix.append(stack.pop()).append(" ");
+        }
+        
+        return postfix.toString();
+    }
+    
+    public static void main(String[] args) {
+        String[] infixExpressions = {
+            "2+3",           // 2 3 +
+            "2+3*4",         // 2 3 4 * +
+            "(2+3)*4",       // 2 3 + 4 *
+            "2*3+4",         // 2 3 * 4 +
+            "2^3^2"          // 2 3 2 ^ ^  (right associative)
+        };
+        
+        for (String expr : infixExpressions) {
+            System.out.println("Infix: " + expr);
+            System.out.println("Postfix: " + infixToPostfix(expr));
+            System.out.println();
+        }
+    }
+}
+```
+
+**Example Conversion: `2 + 3 * 4`**
+
+```
+Token '2': Output: [2], Stack: []
+Token '+': Output: [2], Stack: [+]
+Token '3': Output: [2, 3], Stack: [+]
+Token '*': + has lower precedence than *, so Stack: [+, *]
+Token '4': Output: [2, 3, 4], Stack: [+, *]
+End: Pop remaining → Output: [2, 3, 4, *, +]
+
+Result Postfix: 2 3 4 * +
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📬 Queue Implementations</h3></summary>
+
+> **Queue** is a FIFO (First-In-First-Out) data structure where insertion happens at rear and deletion at front.
+
+### 1️⃣ **Queue using LinkedList**
+
+Using LinkedList provides O(1) enqueue and dequeue operations.
+
+```java
+import java.util.LinkedList;
+
+public class QueueLinkedList {
+    
+    LinkedList<Integer> queue = new LinkedList<>();
+    
+    // Enqueue - add at rear | O(1)
+    public void enqueue(int value) {
+        queue.add(value);  // add() at end
+    }
+    
+    // Dequeue - remove from front | O(1)
+    public int dequeue() {
+        if (queue.isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        return queue.remove();  // remove() from front
+    }
+    
+    // Peek - view front element | O(1)
+    public int peek() {
+        if (queue.isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        return queue.getFirst();
+    }
+    
+    // Check if empty
+    public boolean isEmpty() {
+        return queue.isEmpty();
+    }
+    
+    // Get size
+    public int size() {
+        return queue.size();
+    }
+    
+    public static void main(String[] args) {
+        QueueLinkedList q = new QueueLinkedList();
+        
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        System.out.println("After enqueue: " + q.queue);  // [10, 20, 30]
+        
+        System.out.println("Peek: " + q.peek());          // 10
+        System.out.println("Dequeue: " + q.dequeue());    // 10
+        System.out.println("After dequeue: " + q.queue);  // [20, 30]
+    }
+}
+```
+
+---
+
+### 2️⃣ **Queue using ArrayList**
+
+ArrayList implementation with front pointer:
+
+```java
+import java.util.ArrayList;
+
+public class QueueArrayList {
+    
+    ArrayList<Integer> queue = new ArrayList<>();
+    int front = 0;
+    
+    // Enqueue - add at rear | O(1)
+    public void enqueue(int value) {
+        queue.add(value);
+    }
+    
+    // Dequeue - remove from front | O(1) amortized
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        int value = queue.get(front);
+        front++;
+        
+        // Reset when half of ArrayList is wasted
+        if (front > queue.size() / 2) {
+            queue = new ArrayList<>(queue.subList(front, queue.size()));
+            front = 0;
+        }
+        
+        return value;
+    }
+    
+    // Peek - view front element | O(1)
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        return queue.get(front);
+    }
+    
+    public boolean isEmpty() {
+        return front >= queue.size();
+    }
+    
+    public int size() {
+        return queue.size() - front;
+    }
+    
+    public static void main(String[] args) {
+        QueueArrayList q = new QueueArrayList();
+        
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        
+        System.out.println("Dequeue: " + q.dequeue());  // 10
+        System.out.println("Size: " + q.size());         // 2
+        System.out.println("Peek: " + q.peek());         // 20
+    }
+}
+```
+
+---
+
+### 3️⃣ **Queue using Array (Circular)**
+
+Array-based implementation with wrap-around:
+
+```java
+public class QueueArray {
+    
+    private int[] queue;
+    private int front = 0;
+    private int rear = -1;
+    private int size = 0;
+    private int capacity;
+    
+    public QueueArray(int capacity) {
+        this.capacity = capacity;
+        this.queue = new int[capacity];
+    }
+    
+    // Enqueue - add at rear | O(1)
+    public void enqueue(int value) {
+        if (size == capacity) {
+            System.out.println("Queue is full!");
+            return;
+        }
+        rear = (rear + 1) % capacity;  // Wrap around
+        queue[rear] = value;
+        size++;
+    }
+    
+    // Dequeue - remove from front | O(1)
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        int value = queue[front];
+        front = (front + 1) % capacity;  // Wrap around
+        size--;
+        return value;
+    }
+    
+    // Peek - view front element | O(1)
+    public int peek() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!");
+            return -1;
+        }
+        return queue[front];
+    }
+    
+    public boolean isEmpty() {
+        return size == 0;
+    }
+    
+    public boolean isFull() {
+        return size == capacity;
+    }
+    
+    public int size() {
+        return size;
+    }
+    
+    public static void main(String[] args) {
+        QueueArray q = new QueueArray(5);
+        
+        q.enqueue(10);
+        q.enqueue(20);
+        q.enqueue(30);
+        
+        System.out.println("Dequeue: " + q.dequeue());  // 10
+        System.out.println("Size: " + q.size());         // 2
+        
+        q.enqueue(40);
+        q.enqueue(50);
+        System.out.println("Front: " + q.peek());        // 20
+    }
+}
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>↔️ Deque Operations (Double-Ended Queue)</h3></summary>
+
+> **Deque** (Double-Ended Queue) allows insertion and deletion at **both ends**.
+
+### 1️⃣ **Deque using LinkedList**
+
+```java
+import java.util.*;
+
+public class DequeDemo {
+    public static void main(String[] args) {
+        Deque<Integer> deque = new LinkedList<>();
+        
+        // Add at front
+        deque.addFirst(10);
+        deque.addFirst(20);
+        System.out.println("After addFirst: " + deque);  // [20, 10]
+        
+        // Add at rear
+        deque.addLast(5);
+        deque.addLast(1);
+        System.out.println("After addLast: " + deque);   // [20, 10, 5, 1]
+        
+        // Remove from front
+        System.out.println("RemoveFirst: " + deque.removeFirst());  // 20
+        System.out.println("After removeFirst: " + deque);          // [10, 5, 1]
+        
+        // Remove from rear
+        System.out.println("RemoveLast: " + deque.removeLast());    // 1
+        System.out.println("After removeLast: " + deque);           // [10, 5]
+        
+        // Peek
+        System.out.println("GetFirst: " + deque.getFirst());  // 10
+        System.out.println("GetLast: " + deque.getLast());    // 5
+    }
+}
+```
+
+**Output:**
+```
+After addFirst: [20, 10]
+After addLast: [20, 10, 5, 1]
+RemoveFirst: 20
+After removeFirst: [10, 5, 1]
+RemoveLast: 1
+After removeLast: [10, 5]
+GetFirst: 10
+GetLast: 5
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔄 Circular Queue</h3></summary>
+
+> **Circular Queue** is a queue where the end connects to the beginning, preventing wasted space.
+
+### Implementation
+
+```java
+public class CircularQueue {
+    
+    private int[] queue;
+    private int front = -1;
+    private int rear = -1;
+    private int capacity;
+    
+    public CircularQueue(int capacity) {
+        this.capacity = capacity;
+        this.queue = new int[capacity];
+    }
+    
+    // Check if empty
+    public boolean isEmpty() {
+        return front == -1;
+    }
+    
+    // Check if full
+    public boolean isFull() {
+        return (rear + 1) % capacity == front;
+    }
+    
+    // Enqueue - add at rear | O(1)
+    public void enqueue(int value) {
+        if (isFull()) {
+            System.out.println("Circular Queue is full!");
+            return;
+        }
+        
+        if (front == -1) {
+            front = 0;  // First element
+        }
+        
+        rear = (rear + 1) % capacity;
+        queue[rear] = value;
+        System.out.println("Enqueued: " + value);
+    }
+    
+    // Dequeue - remove from front | O(1)
+    public int dequeue() {
+        if (isEmpty()) {
+            System.out.println("Circular Queue is empty!");
+            return -1;
+        }
+        
+        int value = queue[front];
+        
+        if (front == rear) {
+            // Last element
+            front = -1;
+            rear = -1;
+        } else {
+            front = (front + 1) % capacity;
+        }
+        
+        System.out.println("Dequeued: " + value);
+        return value;
+    }
+    
+    // Display queue
+    public void display() {
+        if (isEmpty()) {
+            System.out.println("Queue is empty!");
+            return;
+        }
+        
+        System.out.print("Queue: ");
+        if (front <= rear) {
+            for (int i = front; i <= rear; i++) {
+                System.out.print(queue[i] + " ");
+            }
+        } else {
+            for (int i = front; i < capacity; i++) {
+                System.out.print(queue[i] + " ");
+            }
+            for (int i = 0; i <= rear; i++) {
+                System.out.print(queue[i] + " ");
+            }
+        }
+        System.out.println();
+    }
+    
+    public static void main(String[] args) {
+        CircularQueue cq = new CircularQueue(5);
+        
+        cq.enqueue(10);
+        cq.enqueue(20);
+        cq.enqueue(30);
+        cq.display();  // Queue: 10 20 30
+        
+        cq.dequeue();
+        cq.display();  // Queue: 20 30
+        
+        cq.enqueue(40);
+        cq.enqueue(50);
+        cq.display();  // Queue: 20 30 40 50
+    }
+}
+```
+
+</details>
+
+---
+
+## ✅ DAY 7 - Problems Covered
+
+### 📋 **Notation & Queue Problems**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Infix to Postfix Conversion | 🟡 Medium | Stack + Operator precedence | ✅ |
+| 2 | Postfix Expression Evaluation | 🟡 Medium | Stack operations | ✅ |
+| 3 | Queue LinkedList Implementation | 🟡 Medium | Linked structure | ✅ |
+| 4 | Queue ArrayList Implementation | 🟡 Medium | Dynamic sizing | ✅ |
+| 5 | Queue Array Implementation | 🟡 Medium | Fixed capacity | ✅ |
+| 6 | Deque Operations | 🟡 Medium | Double-ended access | ✅ |
+| 7 | Circular Queue Implementation | 🟡 Medium | Circular logic | ✅ |
+
+---
+
+## 📚 Day 7 Key Takeaways
+
+- ✅ **Notation Matters:** Postfix eliminates need for precedence rules and parentheses
+- ✅ **Queue Efficiency:** Different implementations (LinkedList, ArrayList, Array) suit different needs
+- ✅ **Circular Optimization:** Circular queues prevent memory wastage in array implementations
+- ✅ **Deque Flexibility:** Double-ended queues provide more operational flexibility than standard queues
+- ✅ **Stack Connection:** Infix-to-postfix conversion elegantly uses stack properties
+
+---
+
+# 📅 DAY 8: Binary Trees
+
+## 📚 DAY 8 - Topics
+
+---
+
+<details open>
+<summary><h3>🌳 Binary Tree Concepts & Types</h3></summary>
+
+> **Binary Tree** is a hierarchical data structure where each node has **at most 2 children** (left and right).
+
+### 1️⃣ **Binary Tree Terminology**
+
+```
+         1          ← Root Node
+        / \
+       2   3        ← Children of 1
+      / \
+     4   5          ← Children of 2
+     
+- Root: Node with no parent (1)
+- Parent: Node with children (1, 2)
+- Child: Node with parent (2, 3, 4, 5)
+- Leaf: Node with no children (3, 4, 5)
+- Height: Longest path from root to leaf (3 nodes: 1→2→4 or 1→2→5)
+- Depth: Distance from root (e.g., 4 has depth 2)
+- Level: Nodes at same distance from root
+```
+
+### 2️⃣ **Binary Tree Types**
+
+#### 🎯 **Full Binary Tree**
+Every node has either 0 or 2 children.
+
+```
+        1
+       / \
+      2   3
+     / \
+    4   5
+    
+✅ Full BT (1 has 2, 2 has 2, 3 has 0, 4 has 0, 5 has 0)
+```
+
+#### 🎯 **Complete Binary Tree**
+All levels fully filled except possibly the last, which is filled left-to-right.
+
+```
+        1
+       / \
+      2   3
+     / \ /
+    4  5 6
+    
+✅ Complete BT (all levels filled, last level left-to-right)
+```
+
+#### 🎯 **Perfect Binary Tree**
+All levels completely filled.
+
+```
+        1
+       / \
+      2   3
+     / \ / \
+    4  5 6  7
+    
+✅ Perfect BT (all levels completely filled)
+```
+
+#### 🎯 **Balanced Binary Tree**
+Height difference between left and right subtree ≤ 1 for every node.
+
+```
+        1
+       / \
+      2   3
+     /
+    4
+    
+✅ Balanced (height diff: |1-0|=1, |0-0|=0)
+```
+
+#### 🎯 **Skewed Binary Tree**
+All nodes have at most 1 child (like a linked list).
+
+```
+    1
+     \
+      2
+       \
+        3
+         \
+          4
+          
+❌ Skewed to right
+```
+
+### 3️⃣ **Binary Tree Representation**
+
+**Array Representation:**
+```
+For node at index i:
+- Left child: 2*i + 1
+- Right child: 2*i + 2
+- Parent: (i-1) / 2
+
+Tree:     1
+         / \
+        2   3
+
+Array: [1, 2, 3]
+Indices: 0, 1, 2
+```
+
+**Linked List Representation:**
+```java
+class Node {
+    Integer data;
+    Node left;
+    Node right;
+}
+
+Tree stored as interconnected nodes with pointers.
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🏗️ Binary Tree Creation</h3></summary>
+
+> **Tree Creation** involves building a tree from input data (usually an array with special markers for null nodes).
+
+### 1️⃣ **Building Tree from Level-Order Array**
+
+Input array format: `[value1, value2, value3, ..., -1 means null]`
+
+```
+Input: [1, 2, 3, 4, 5, -1, 6]
+
+Tree structure:
+        1
+       / \
+      2   3
+     / \   \
+    4   5   6
+```
+
+### Implementation
+
+```java
+public class BinaryTree {
+    
+    int i = -1;
+    
+    class Node {
+        Integer data;
+        Node left;
+        Node right;
+        
+        Node(Integer data) {
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+    
+    public Node buildTree(int[] nodes) {
+        i++;
+        
+        if (nodes[i] == -1) {
+            return null;  // -1 represents null node
+        }
+        
+        Node newNode = new Node(nodes[i]);
+        newNode.left = buildTree(nodes);   // Build left subtree
+        newNode.right = buildTree(nodes);  // Build right subtree
+        
+        return newNode;
+    }
+    
+    public static void main(String[] args) {
+        BinaryTree bt = new BinaryTree();
+        
+        int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+        Node root = bt.buildTree(nodes);
+        
+        System.out.println("Tree built successfully!");
+    }
+}
+```
+
+**Dry Run: Building tree from `[1, 2, 4, -1, -1, 5, -1, -1, 3]`**
+
+```
+Call buildTree with array index progression:
+i=0: nodes[0]=1 → create Node(1), build left, build right
+i=1: nodes[1]=2 → create Node(2), build left, build right
+i=2: nodes[2]=4 → create Node(4), build left, build right
+i=3: nodes[3]=-1 → return null (left of 4)
+i=4: nodes[4]=-1 → return null (right of 4)
+i=5: nodes[5]=5 → create Node(5), build left, build right
+i=6: nodes[6]=-1 → return null (left of 5)
+i=7: nodes[7]=-1 → return null (right of 5)
+i=8: nodes[8]=3 → create Node(3), build left, build right
+
+Result:
+     1
+    / \
+   2   3
+  /
+ 4
+  \
+   5
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>↔️ Tree Traversal Methods</h3></summary>
+
+> **Traversal** is visiting all nodes in a tree in some order. Three main DFS traversals exist.
+
+### 1️⃣ **PreOrder Traversal (Root, Left, Right)**
+
+Visit node **before** visiting its children.
+
+**Order: Node → Left Subtree → Right Subtree**
+
+```java
+public void preOrder(Node root) {
+    if (root == null) {
+        return;
+    }
+    
+    System.out.print(root.data + " ");   // Process node
+    preOrder(root.left);                  // Left subtree
+    preOrder(root.right);                 // Right subtree
+}
+```
+
+**Example Tree:**
+```
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+PreOrder: 1 2 4 5 3
+```
+
+**Dry Run:**
+```
+preOrder(1): print 1
+  preOrder(2): print 2
+    preOrder(4): print 4
+      preOrder(null): return
+      preOrder(null): return
+    preOrder(5): print 5
+      preOrder(null): return
+      preOrder(null): return
+  preOrder(3): print 3
+    preOrder(null): return
+    preOrder(null): return
+
+Output: 1 2 4 5 3
+```
+
+---
+
+### 2️⃣ **InOrder Traversal (Left, Root, Right)**
+
+Visit node **between** visiting its children.
+
+**Order: Left Subtree → Node → Right Subtree**
+
+```java
+public void inOrder(Node root) {
+    if (root == null) {
+        return;
+    }
+    
+    inOrder(root.left);                   // Left subtree
+    System.out.print(root.data + " ");   // Process node
+    inOrder(root.right);                  // Right subtree
+}
+```
+
+**Example Tree:**
+```
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+InOrder: 4 2 5 1 3
+```
+
+**Important:** InOrder traversal of **Binary Search Tree** gives sorted order!
+
+---
+
+### 3️⃣ **PostOrder Traversal (Left, Right, Root)**
+
+Visit node **after** visiting its children.
+
+**Order: Left Subtree → Right Subtree → Node**
+
+```java
+public void postOrder(Node root) {
+    if (root == null) {
+        return;
+    }
+    
+    postOrder(root.left);                 // Left subtree
+    postOrder(root.right);                // Right subtree
+    System.out.print(root.data + " ");   // Process node
+}
+```
+
+**Example Tree:**
+```
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+PostOrder: 4 5 2 3 1
+```
+
+**Use Case:** PostOrder is useful for deleting trees (delete children before parent).
+
+---
+
+### 📊 Traversal Comparison
+
+| Traversal | Order | Use Case |
+|:----------|:------|:---------|
+| **PreOrder** | Node-Left-Right | Tree copy, prefix expression |
+| **InOrder** | Left-Node-Right | BST in sorted order |
+| **PostOrder** | Left-Right-Node | Tree deletion |
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📈 Tree Operations</h3></summary>
+
+> **Tree Operations** include calculating properties like height and sum of nodes.
+
+### 1️⃣ **Height of Binary Tree**
+
+Height is the maximum distance from root to any leaf.
+
+```java
+public int treeHeight(Node root) {
+    if (root == null) {
+        return 0;
+    }
+    
+    int leftHeight = treeHeight(root.left);
+    int rightHeight = treeHeight(root.right);
+    
+    return Math.max(leftHeight, rightHeight) + 1;
+}
+```
+
+**Example:**
+```
+       1           Height = 3
+      / \
+     2   3         Height = 2
+    / \
+   4   5           Height = 1
+   
+   
+Leaf nodes have height = 1
+```
+
+**Dry Run: Height of above tree**
+
+```
+treeHeight(1):
+  treeHeight(2):
+    treeHeight(4): return 1
+    treeHeight(5): return 1
+    return max(1, 1) + 1 = 2
+  treeHeight(3): return 1
+  return max(2, 1) + 1 = 3
+
+Result: 3
+```
+
+**Time Complexity:** O(n) - visit every node
+**Space Complexity:** O(h) - recursion stack depth (h = height)
+
+---
+
+### 2️⃣ **Sum of All Nodes**
+
+Calculate total of all node values in tree.
+
+```java
+public int sumOfNodes(Node root) {
+    if (root == null) {
+        return 0;
+    }
+    
+    int leftSum = sumOfNodes(root.left);
+    int rightSum = sumOfNodes(root.right);
+    
+    return root.data + leftSum + rightSum;
+}
+```
+
+**Example:**
+```
+       1
+      / \
+     2   3
+    / \
+   4   5
+
+Sum = 1 + 2 + 3 + 4 + 5 = 15
+```
+
+**Dry Run:**
+```
+sumOfNodes(1):
+  sumOfNodes(2):
+    sumOfNodes(4): return 4
+    sumOfNodes(5): return 5
+    return 2 + 4 + 5 = 11
+  sumOfNodes(3): return 3
+  return 1 + 11 + 3 = 15
+
+Result: 15
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>💻 Complete Day 8 Implementation</h3></summary>
+
+```java
+public class Day8BT {
+
+    int i = -1;
+
+    class Node {
+
+        Integer data;
+        Node left;
+        Node right;
+
+        Node(Integer data) {
+
+            this.data = data;
+            this.left = null;
+            this.right = null;
+        }
+    }
+
+    public Node buildTree(int[] nodes) {
+        i++;
+        if (nodes[i] == -1) {
+            // return new Node(null);
+            return null;
+        }
+
+        Node newNode = new Node(nodes[i]);
+        newNode.left = buildTree(nodes);
+        newNode.right = buildTree(nodes);
+
+        return newNode;
+    }
+
+    public void preOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        System.out.print(root.data + " ");
+        preOrder(root.left);
+        preOrder(root.right);
+
+    }
+
+    public void postOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        postOrder(root.left);
+        postOrder(root.right);
+        System.out.print(root.data + " ");
+
+    }
+
+    public void inOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
+
+    }
+
+    public int treeHeight(Node root) {
+
+        if (root == null) {
+            return 0;
+        }
+
+        int left = treeHeight(root.left);
+        int right = treeHeight(root.right);
+
+        return Math.max(left, right) + 1;
+
+    }
+
+    public int sumOfNodes(Node root) {
+        if (root == null) {
+            return 0;
+        }
+
+        int leftSum = sumOfNodes(root.left);
+        int rightSum = sumOfNodes(root.right);
+
+        return root.data + leftSum + rightSum;
+    }
+    
+    public static void main(String[] args) {
+        Day8BT bt = new Day8BT();
+        
+        int[] nodes = {1, 2, 4, -1, -1, 5, -1, -1, 3, -1, 6, -1, -1};
+        bt.i = -1;
+        Node root = bt.buildTree(nodes);
+        
+        System.out.println("\n=== Binary Tree Operations ===\n");
+        
+        System.out.print("PreOrder Traversal: ");
+        bt.preOrder(root);
+        System.out.println();
+        
+        System.out.print("InOrder Traversal: ");
+        bt.inOrder(root);
+        System.out.println();
+        
+        System.out.print("PostOrder Traversal: ");
+        bt.postOrder(root);
+        System.out.println();
+        
+        System.out.println("\nHeight of Tree: " + bt.treeHeight(root));
+        System.out.println("Sum of All Nodes: " + bt.sumOfNodes(root));
+    }
+}
+```
+
+**Sample Output:**
+```
+=== Binary Tree Operations ===
+
+PreOrder Traversal: 1 2 4 5 3 6
+InOrder Traversal: 4 2 5 1 3 6
+PostOrder Traversal: 4 5 2 6 3 1
+
+Height of Tree: 3
+Sum of All Nodes: 21
+```
+
+</details>
+
+---
+
+## ✅ DAY 8 - Problems Covered
+
+### 📋 **Binary Tree Problems**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Binary Tree Creation | 🟡 Medium | Array to tree conversion | ✅ |
+| 2 | PreOrder Traversal | 🟢 Easy | DFS - Node first | ✅ |
+| 3 | InOrder Traversal | 🟢 Easy | DFS - Node middle | ✅ |
+| 4 | PostOrder Traversal | 🟢 Easy | DFS - Node last | ✅ |
+| 5 | Height of Binary Tree | 🟡 Medium | Recursive calculation | ✅ |
+| 6 | Sum of All Nodes | 🟡 Medium | Tree aggregation | ✅ |
+| 7 | Binary Tree Type Classification | 🟡 Medium | Tree properties | ✅ |
+
+---
+
+## 📚 Day 8 Key Takeaways
+
+- ✅ **Recursive Elegance:** Tree operations naturally map to recursive solutions
+- ✅ **Traversal Variety:** Different traversals serve different purposes (copy, sort, delete)
+- ✅ **Height Definition:** Important for balancing and performance analysis
+- ✅ **Tree Patterns:** Full, Complete, Perfect trees have specific properties and use cases
+- ✅ **Array to Tree:** Level-order array representation enables efficient tree creation
+
+---
+
+# 📅 DAY 9: Binary Search Tree & Graph Introduction
+
+## 📚 DAY 9 - Topics (In Progress)
+
+<details open>
+<summary><h3>🌳 Binary Search Tree (BST) - Upcoming</h3></summary>
+
+**Topics to be covered:**
+
+- 🔄 **BST Properties**
+  - Left subtree values < parent
+  - Right subtree values > parent
+  - All nodes follow BST property recursively
+
+- 🏗️ **BST Creation & Construction**
+  - Insert operations maintaining BST property
+  - Building BST from array
+  - Balancing considerations
+
+- 🔍 **BST Operations**
+  - Search in O(log n) average time
+  - Finding minimum/maximum
+  - Finding successor/predecessor
+  - Range queries
+
+- ↔️ **BST Traversals**
+  - InOrder gives sorted sequence
+  - Using traversals for operations
+  - Level-order traversal
+
+- ➕ **BST Insertion**
+  - Recursive insertion
+  - Maintaining BST property
+  - Handling duplicates
+
+- ➖ **BST Deletion**
+  - Deleting leaf nodes
+  - Deleting nodes with one child
+  - Deleting nodes with two children
+  - Finding in-order successor
+
+- ⚖️ **Self-Balancing BSTs**
+  - AVL Trees
+  - Red-Black Trees
+  - Rotation operations
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📊 Graph Introduction - Upcoming</h3></summary>
+
+**Topics to be covered:**
+
+- 📚 **Graph Basics & Terminology**
+  - Vertices/Nodes and Edges
+  - Directed vs Undirected graphs
+  - Weighted vs Unweighted graphs
+  - Cyclic vs Acyclic graphs
+
+- 🗺️ **Graph Representations**
+  - Adjacency Matrix
+    - 2D array representation
+    - Time & space complexity
+    - Best for dense graphs
+  
+  - Adjacency List
+    - Array of LinkedLists
+    - Space-efficient for sparse graphs
+    - Flexible structure
+
+- 🔍 **Graph Traversals**
+  - Breadth-First Search (BFS)
+  - Depth-First Search (DFS)
+  - Applications and comparison
+
+- 📍 **Shortest Path Algorithms**
+  - Dijkstra's Algorithm
+  - Bellman-Ford Algorithm
+  - Floyd-Warshall Algorithm
+
+- 🌲 **Minimum Spanning Tree**
+  - Kruskal's Algorithm
+  - Prim's Algorithm
+
+- 🔗 **Connected Components**
+  - Finding connected components
+  - Bipartite graph detection
+  - Cycle detection
+
+</details>
 
 ---
 

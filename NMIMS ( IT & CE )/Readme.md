@@ -3,11 +3,11 @@
 # ☕ Java DSA – NMIMS
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active%20Learning-success?style=for-the-badge)
+![Status](https://img.shields.io/badge/Status-Completed-success?style=for-the-badge)
 ![Students](https://img.shields.io/badge/NMIMS-Engineering%20Students-blue?style=for-the-badge)
 ![Batch](https://img.shields.io/badge/Batch-IT%20&%20CE%20(Batch%202)%20&%20CS%20(Batch%204)-red?style=for-the-badge)
-![Progress](https://img.shields.io/badge/Day%204-Completed-brightgreen?style=for-the-badge)
-![Training](https://img.shields.io/badge/Training-In%20Progress-success?style=for-the-badge)
+![Progress](https://img.shields.io/badge/Day%2010-Completed-brightgreen?style=for-the-badge)
+![Training](https://img.shields.io/badge/Training-Completed-success?style=for-the-badge)
 
 ### 🚀 *Master Data Structures & Algorithms with Java!*
 
@@ -110,18 +110,72 @@ Day 4 - Recursion & Pattern Matching:
 ✅ Quick Sort (Recursive Implementation)
 ✅ Problem Solving & Practice
 
-Day 5 - LinkedList (Singly, Doubly, Circular):
-🔜 IN PROGRESS
+Day 5 - Backtracking, Recursion & LinkedList (Singly, Doubly, Circular):
+████████████████████████████████ 100%
 
-⏳ Singly LinkedList - Creation & Traversal
-⏳ Singly LinkedList - Insertion Operations (Head, Middle, End)
-⏳ Singly LinkedList - Deletion Operations
-⏳ Doubly LinkedList - Node Structure with prev/next pointers
-⏳ Doubly LinkedList - Forward & Backward Traversal
-⏳ Doubly LinkedList - Insertion & Deletion at Both Ends
-⏳ Circular LinkedList - Circular Structure
-⏳ Circular LinkedList - Insertion & Deletion with Circularity
-⏳ Advanced LinkedList Problems & Practice
+✅ Backtracking Concepts - N Queens Problem Explanation
+✅ Recursion - Count Total Paths (Maze Path Problem)
+✅ Singly LinkedList - Creation, Traversal, Insertion & Deletion
+✅ Doubly LinkedList - Creation, Traversal, Insertion & Deletion
+✅ Circular Doubly LinkedList - All Operations with Circular Structure
+✅ Advanced LinkedList Problems & Practice
+
+Day 6 - Stack Implementation:
+████████████████████████████████ 100%
+
+✅ Stack - Array Implementation
+✅ Stack - ArrayList Implementation
+✅ Stack - LinkedList Implementation
+✅ Stack using Collections Framework
+✅ Valid Parentheses Problem (using Stack)
+✅ Problem Solving & Practice
+
+Day 7 - Prefix, Infix, Postfix & Queue:
+████████████████████████████████ 100%
+
+✅ Prefix, Infix, Postfix Notation - Concepts & Conversions
+✅ Queue Implementations using LinkedList
+✅ Queue Implementations using ArrayList
+✅ Queue Implementations using Array
+✅ Deque (Double Ended Queue) Operations
+✅ Circular Queue Implementation
+✅ Queue-based Problem Solving
+
+Day 8 - Binary Trees:
+████████████████████████████████ 100%
+
+✅ Binary Trees - All Concepts
+✅ Different Types of Binary Trees (Full, Complete, Perfect, etc.)
+✅ Binary Tree Creation using Array Input
+✅ Tree Traversals - PreOrder Traversal
+✅ Tree Traversals - InOrder Traversal
+✅ Tree Traversals - PostOrder Traversal
+✅ Sum of All Nodes in Tree
+✅ Height of Binary Tree
+✅ Problem Solving & Practice
+
+Day 9 - Binary Search Tree (BST):
+████████████████████████████████ 100%
+
+✅ Binary Search Tree Properties
+✅ BST Creation & Node Insertion
+✅ BST Traversals (InOrder - Sorted Output)
+✅ BST Search Operations
+✅ BST Deletion (All Cases - 0, 1, 2 children)
+✅ InOrder Successor Finding
+✅ Problem Solving & Practice
+
+Day 10 - Graphs & Dynamic Programming:
+████████████████████████████████ 100%
+
+✅ Graph Basics & Terminology
+✅ Graph Representations (Adjacency Matrix & List)
+✅ Breadth-First Search (BFS) Introduction
+✅ Dynamic Programming Fundamentals
+✅ Fibonacci Problem - Recursive Approach
+✅ Fibonacci - Memoization (Top-Down DP)
+✅ Fibonacci - Tabulation (Bottom-Up DP)
+✅ Problem Solving & Practice
 ```
 
 ---
@@ -165,21 +219,82 @@ graph TB
         Z --> AA["🎯 Quick Sort"]
         AA --> AB["🔥 Advanced Problems"]
     end
+
+    subgraph Day5["📅 DAY 5: Backtracking & LinkedList"]
+        AC["🎯 Backtracking"] --> AD["🔀 N Queens"]
+        AD --> AE["🌉 Maze Paths"]
+        AE --> AF["🔗 Singly LL"]
+        AF --> AG["↔️ Doubly LL"]
+        AG --> AH["⭕ Circular LL"]
+    end
+    
+    subgraph Day6["📅 DAY 6: Stack Implementation"]
+        AI["🥞 Stack Concept"] --> AJ["📚 Array Stack"]
+        AJ --> AK["🎯 ArrayList Stack"]
+        AK --> AL["🔗 LinkedList Stack"]
+        AL --> AM["📦 Collections Stack"]
+        AM --> AN["✅ Valid Parentheses"]
+    end
+    
+    subgraph Day7["📅 DAY 7: Infix/Postfix & Queue"]
+        AO["🔤 Prefix Notation"] --> AP["🔄 Infix Notation"]
+        AP --> AQ["➡️ Postfix Notation"]
+        AQ --> AR["🔀 Conversions"]
+        AR --> AS["📬 Queue Basics"]
+        AS --> AT["🔗 LinkedList Queue"]
+        AT --> AU["🏗️ Deque Operations"]
+    end
+    
+    subgraph Day8["📅 DAY 8: Binary Trees"]
+        AV["🌳 Tree Basics"] --> AW["📊 Tree Types"]
+        AW --> AX["🏗️ Tree Creation"]
+        AX --> AY["↔️ PreOrder"]
+        AY --> AZ["↔️ InOrder"]
+        AZ --> BA["↔️ PostOrder"]
+        BA --> BB["📈 Tree Operations"]
+    end
+    
+    subgraph Day9["📅 DAY 9: Binary Search Tree"]
+        BC["🌳 BST Properties"] --> BD["➕ BST Insert"]
+        BD --> BE["🔍 BST Search"]
+        BE --> BF["➖ BST Delete"]
+        BF --> BG["📊 InOrder Traversal"]
+    end
+
+    subgraph Day10["📅 DAY 10: Graphs & DP"]
+        BH["📚 Graph Intro"] --> BI["🗺️ Representations"]
+        BI --> BJ["🔍 BFS"]
+        BJ --> BK["📈 Dynamic Programming"]
+        BK --> BL["🔢 Fibonacci"]
+    end
     
     F --> G
     M --> N
     U --> V
+    AB --> AC
+    AH --> AI
+    AN --> AO
+    AU --> AV
+    BB --> BC
+    BG --> BH
     
     style Day1 fill:#90EE90,stroke:#228B22,stroke-width:3px
     style Day2 fill:#87CEEB,stroke:#4169E1,stroke-width:3px
     style Day3 fill:#FFD700,stroke:#FF8C00,stroke-width:3px
     style Day4 fill:#90EE90,stroke:#228B22,stroke-width:3px
+    style Day5 fill:#DDA0DD,stroke:#8B008B,stroke-width:3px
+    style Day6 fill:#FFB6C1,stroke:#FF1493,stroke-width:3px
+    style Day7 fill:#98FB98,stroke:#228B22,stroke-width:3px
+    style Day8 fill:#87CEEB,stroke:#4169E1,stroke-width:3px
+    style Day9 fill:#FFD700,stroke:#FF8C00,stroke-width:3px
+    style Day10 fill:#98FB98,stroke:#228B22,stroke-width:3px
 ```
 
 ---
 
+# 📅 DAY 1: Collections & Arrays
 
-## 📚 Topics Covered
+## 📚 DAY 1 - Topics
 
 <details open>
 <summary><h3>📦 Arrays & ArrayList</h3></summary>
@@ -414,8 +529,6 @@ Map (Separate Interface)
     ├── Hashtable (Legacy)
     └── WeakHashMap
 ```
-
----
 
 </details>
 
@@ -662,31 +775,6 @@ public class RemoveDuplicatesBruteForce {
 }
 ```
 
-**Dry Run Example:**
-
-```
-Initial: [1, 4, 1, 1, 1, 1, 1, 4, 3, 133, 345, 13, 13]
-         
-i=0 (val=1): j=2 finds duplicate 1 → remove
-             [1, 4, 1, 1, 1, 1, 4, 3, 133, 345, 13, 13]
-             j=2 finds duplicate 1 → remove
-             [1, 4, 1, 1, 1, 4, 3, 133, 345, 13, 13]
-             ... continue until no more 1s at end
-
-i=1 (val=4): j=6 finds duplicate 4 → remove
-             [1, 4, 1, 1, 1, 3, 133, 345, 13, 13]
-
-... continue for all elements
-
-Final: [1, 4, 3, 133, 345, 13]
-```
-
-**Complexity Analysis:**
-- ⏱️ **Time:** O(n²) - nested loops
-- 💾 **Space:** O(1) - no extra space
-- ✅ **Pros:** Simple, in-place
-- ❌ **Cons:** Slow for large lists
-
 ---
 
 ### ⚡ Approach 2: Using HashSet Constructor (O(n))
@@ -710,20 +798,6 @@ public class RemoveDuplicatesHashSet {
     }
 }
 ```
-
-**How it works:**
-```
-1. new HashSet<>(arr)      → Converts ArrayList to HashSet
-                             → Automatically removes duplicates
-                             
-2. new ArrayList<>(...)     → Converts back to ArrayList
-```
-
-**Complexity Analysis:**
-- ⏱️ **Time:** O(n)
-- 💾 **Space:** O(n)
-- ✅ **Pros:** Concise, fast
-- ❌ **Cons:** Order not guaranteed, extra space
 
 ---
 
@@ -764,11 +838,6 @@ public class RemoveDuplicates {
         System.out.println("Original: " + Arrays.toString(input));
         System.out.println("Brute Force: " + removeDuplicatesBruteForce(input));
         System.out.println("HashSet: " + removeDuplicatesHashSet(input));
-        
-        // Output:
-        // Original: [1, 4, 1, 1, 1, 1, 1, 4, 3, 133, 345, 13, 13]
-        // Brute Force: [1, 4, 3, 133, 345, 13]
-        // HashSet: [1, 4, 3, 133, 345, 13]
     }
 }
 ```
@@ -788,771 +857,7 @@ public class RemoveDuplicates {
 
 ---
 
-## 📚 Day 4: Regular Expressions & Recursion Mastery
-
----
-
-<details open>
-<summary><h3>🔤 Regular Expressions - Pattern Matching</h3></summary>
-
-> **Regular Expression (RegEx)** is a pattern used to match and manipulate strings. It's a powerful tool for validation, search, and string replacement.
-
-### 1️⃣ **RegEx Metacharacters - Special Codes**
-
-#### 📊 Common Escape Sequences
-
-| Code | Matches | Example |
-|:----:|:--------|:--------|
-| `\d` | Any digit (0-9) | `\d{3}` matches "123" |
-| `\D` | Any non-digit | `\D+` matches "abc" |
-| `\w` | Word char (a-z, A-Z, 0-9, _) | `\w+` matches "hello_world" |
-| `\W` | Any non-word character | `\W+` matches "@#$" |
-| `\s` | Whitespace (space, tab, newline) | `\s+` matches " " |
-| `\S` | Any non-whitespace | `\S+` matches "hello" |
-
-#### 🔤 Character Classes
-
-```
-[abc]      → Match a, b, or c
-[a-z]      → Match any lowercase letter
-[A-Z]      → Match any uppercase letter
-[0-9]      → Match any digit
-[a-zA-Z0-9] → Alphanumeric
-[^abc]     → Match anything EXCEPT a, b, c
-```
-
-#### ⏲️ Quantifiers
-
-```
-*      → 0 or more occurrences (greedy)
-+      → 1 or more occurrences (greedy)
-?      → 0 or 1 occurrence (optional)
-{n}    → Exactly n occurrences
-{n,}   → n or more occurrences
-{n,m}  → Between n and m occurrences
-```
-
-#### 🎯 Anchors & Boundaries
-
-```
-^      → Start of string
-$      → End of string
-\b     → Word boundary
-.      → Any character except newline
-|      → OR operator
-()     → Grouping
-```
-
----
-
-### 2️⃣ **Pattern & Matcher in Java**
-
-Java uses `java.util.regex` package for regular expressions with two main classes:
-
-**Pattern:** Compiled representation of a regex
-**Matcher:** Engine that performs match operations
-
-```java
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-
-public class RegExDemo {
-    public static void main(String[] args) {
-        // Step 1: Compile the pattern
-        Pattern pattern = Pattern.compile("[A-Za-z]+");
-        
-        // Step 2: Create matcher with input string
-        Matcher matcher = pattern.matcher("Subscribe");
-        
-        // Step 3: Test the string
-        boolean result = matcher.matches();  // Check if ENTIRE string matches
-        System.out.println(result);  // true (only letters)
-    }
-}
-```
-
-**Output:** `true`
-
----
-
-### 3️⃣ **Matcher Methods**
-
-#### `matches()` - Entire String Match
-
-```java
-Pattern pat = Pattern.compile("[A-Za-z]+");
-Matcher mat = pat.matcher("Subscribe");
-boolean res = mat.matches();  // true - entire string is letters
-System.out.println(res);
-```
-
-#### `find()` - Find Pattern Occurrence
-
-```java
-Pattern pat = Pattern.compile("\\d+");  // Find digits
-Matcher mat = pat.matcher("abc123def456");
-
-while(mat.find()) {
-    System.out.println(mat.group());  // Prints: 123, 456
-}
-```
-
-#### `group()` - Get Matched Text
-
-```java
-Pattern pat = Pattern.compile("([A-Z][a-z]+)");
-Matcher mat = pat.matcher("ShineVerse");
-
-if(mat.find()) {
-    System.out.println(mat.group());  // Prints: Shine
-}
-```
-
----
-
-### 4️⃣ **Real-World RegEx Examples**
-
-#### 📧 Email Validation
-
-```java
-Pattern emailPattern = Pattern.compile(
-    "[a-zA-z0-9]+[.-]?[a-z0-9]+[-]?[a-z]*@{1}[a-z]+-?[a-z]*[.][a-z]+"
-);
-
-String[] emails = {
-    "ShivamRBansal@gmail.com",
-    "shivam.bansal@university.edu",
-    "shivam-1216-bansal@my-work.net",
-    "anushka-123242-mehta@china.online"
-};
-
-for(String email : emails) {
-    Matcher mat = emailPattern.matcher(email);
-    System.out.println(email + ": " + mat.matches());
-}
-```
-
-**Output:**
-```
-ShivamRBansal@gmail.com: true
-shivam.bansal@university.edu: true
-shivam-1216-bansal@my-work.net: true
-anushka-123242-mehta@china.online: true
-```
-
-#### 📱 Phone Number Validation
-
-```java
-Pattern phonePattern = Pattern.compile("\\d{3}-\\d{3}-\\d{4}");
-String phone = "615-555-7164";
-Matcher mat = phonePattern.matcher(phone);
-System.out.println(mat.matches());  // true
-```
-
-#### 🌐 URL Extraction
-
-```java
-Pattern urlPattern = Pattern.compile("https?://[\\w/.-]+");
-String text = "Visit https://example.com or http://test.org";
-Matcher mat = urlPattern.matcher(text);
-
-while(mat.find()) {
-    System.out.println(mat.group());  // Extracts URLs
-}
-```
-
----
-
-### 5️⃣ **Pattern Matching Practice**
-
-```java
-import java.util.regex.Pattern;
-import java.util.regex.Matcher;
-
-public class RegExPractice {
-    public static void main(String[] args) {
-        // Only uppercase letters - exactly 5
-        Pattern pat1 = Pattern.compile("[A-Z]{5}");
-        System.out.println(pat1.matcher("AAAAA").matches());  // true
-        System.out.println(pat1.matcher("AAAA").matches());   // false
-        
-        // Camel case: Capital followed by lowercase (twice)
-        Pattern pat2 = Pattern.compile("([A-Z][a-z]+){2}");
-        System.out.println(pat2.matcher("ShineVerse").matches());  // true
-        System.out.println(pat2.matcher("shineverse").matches());  // false
-        
-        // Extract digits
-        Pattern pat3 = Pattern.compile("\\d+");
-        Matcher mat3 = pat3.matcher("abc123def456");
-        while(mat3.find()) {
-            System.out.println(mat3.group());  // 123, 456
-        }
-    }
-}
-```
-
-</details>
-
----
-
-<details open>
-<summary><h3>🔀 Recursion Fundamentals</h3></summary>
-
-> **Recursion** is a programming technique where a function calls itself directly or indirectly. Every recursive function must have a **base case** to stop recursion.
-
-### 1️⃣ **Recursion Basics - Key Concepts**
-
-#### 🎯 Components of Recursion
-
-1. **Base Case:** Condition that stops recursion
-2. **Recursive Case:** Function calls itself with modified parameters
-3. **Call Stack:** Stores function calls in memory
-
-#### 📚 Example: Print Numbers 1 to N
-
-```java
-public class RecursionBasics {
-    
-    // Print 1, 2, 3, ..., n
-    public static void print1ToN(int i, int n) {
-        // Base case: stop when i exceeds n
-        if (i == n + 1)
-            return;
-        
-        // Recursive case
-        System.out.println(i);
-        print1ToN(i + 1, n);  // Call with i+1
-    }
-    
-    public static void main(String[] args) {
-        print1ToN(1, 10);
-        // Output: 1 2 3 4 5 6 7 8 9 10
-    }
-}
-```
-
-#### 🔄 Dry Run: `print1ToN(1, 3)`
-
-```
-Call Stack Visualization:
-
-print1ToN(1,3) → i=1, print 1
-  print1ToN(2,3) → i=2, print 2
-    print1ToN(3,3) → i=3, print 3
-      print1ToN(4,3) → i=4, base case reached
-        return
-      
-Output: 1 2 3
-```
-
-#### 🔀 Print N to 1 (Reverse Order)
-
-```java
-public class RecursionReverse {
-    
-    public static void printNTo1(int n) {
-        // Base case
-        if (n == 0)
-            return;
-        
-        // Print before recursion
-        System.out.println(n);
-        printNTo1(n - 1);
-    }
-    
-    public static void main(String[] args) {
-        printNTo1(5);
-        // Output: 5 4 3 2 1
-    }
-}
-```
-
-#### 📊 Dry Run: `printNTo1(3)`
-
-```
-printNTo1(3) → print 3
-  printNTo1(2) → print 2
-    printNTo1(1) → print 1
-      printNTo1(0) → base case
-        return
-      
-Output: 3 2 1
-```
-
----
-
-### 2️⃣ **Call Stack Visualization**
-
-#### 🎯 Understanding How Recursion Works
-
-```java
-public class CallStackDemo {
-    
-    public static void demo(int n) {
-        System.out.println("Before Fn = " + n);
-        
-        if (n == 0) {
-            System.out.println("----- Base Case -----");
-            return;
-        }
-        
-        demo(n - 1);  // Go deeper
-        System.out.println("After Fn = " + n);
-    }
-    
-    public static void main(String[] args) {
-        demo(3);
-    }
-}
-```
-
-**Call Stack Visualization:**
-
-```
-demo(3) called
-├─ prints: "Before Fn = 3"
-│
-├─ demo(2) called
-│ ├─ prints: "Before Fn = 2"
-│ │
-│ ├─ demo(1) called
-│ │ ├─ prints: "Before Fn = 1"
-│ │ │
-│ │ ├─ demo(0) called
-│ │ │ ├─ prints: "Before Fn = 0"
-│ │ │ ├─ prints: "----- Base Case -----"
-│ │ │ └─ RETURN ↓↓↓
-│ │ │
-│ │ ├─ prints: "After Fn = 1"
-│ │ └─ RETURN
-│ │
-│ ├─ prints: "After Fn = 2"
-│ └─ RETURN
-│
-├─ prints: "After Fn = 3"
-└─ RETURN
-
-OUTPUT:
-Before Fn = 3
-Before Fn = 2
-Before Fn = 1
-Before Fn = 0
------ Base Case -----
-After Fn = 1
-After Fn = 2
-After Fn = 3
-```
-
-</details>
-
----
-
-<details open>
-<summary><h3>📝 Recursion Problem 1: Sum of N Natural Numbers</h3></summary>
-
-> **Problem:** Calculate the sum of first N natural numbers (1 + 2 + 3 + ... + N) using recursion.
-
-### 1️⃣ **Method 1: With Accumulator Parameter**
-
-```java
-public class SumOfN_Method1 {
-    
-    public static void sumOfN(int n, int currSum) {
-        // Base case: when n becomes 0, print the sum
-        if (n == 0) {
-            System.out.println("Sum = " + currSum);
-            return;
-        }
-        
-        // Recursive case: add n to currSum and call with n-1
-        sumOfN(n - 1, currSum + n);
-    }
-    
-    public static void main(String[] args) {
-        int n = 5;
-        sumOfN(n, 0);  // Start with sum = 0
-        // Output: Sum = 15  (1+2+3+4+5)
-    }
-}
-```
-
-**Dry Run: `sumOfN(5, 0)`**
-
-```
-sumOfN(5, 0) → Add 5: sumOfN(4, 5)
-sumOfN(4, 5) → Add 4: sumOfN(3, 9)
-sumOfN(3, 9) → Add 3: sumOfN(2, 12)
-sumOfN(2, 12) → Add 2: sumOfN(1, 14)
-sumOfN(1, 14) → Add 1: sumOfN(0, 15)
-sumOfN(0, 15) → Print "Sum = 15"
-
-Output: Sum = 15
-```
-
----
-
-### 2️⃣ **Method 2: Return Value from Recursion**
-
-```java
-public class SumOfN_Method2 {
-    
-    public static int sumOfN(int n) {
-        // Base case
-        if (n == 0) {
-            return 0;
-        }
-        
-        // Recursive case: return n + sum of (n-1)
-        return n + sumOfN(n - 1);
-    }
-    
-    public static void main(String[] args) {
-        int n = 5;
-        int result = sumOfN(n);
-        System.out.println(result);  // 15
-    }
-}
-```
-
-**Dry Run: `sumOfN(5)`**
-
-```
-sumOfN(5) = 5 + sumOfN(4)
-           = 5 + (4 + sumOfN(3))
-           = 5 + (4 + (3 + sumOfN(2)))
-           = 5 + (4 + (3 + (2 + sumOfN(1))))
-           = 5 + (4 + (3 + (2 + (1 + sumOfN(0)))))
-           = 5 + (4 + (3 + (2 + (1 + 0))))
-           = 5 + (4 + (3 + (2 + 1)))
-           = 5 + (4 + (3 + 3))
-           = 5 + (4 + 6)
-           = 5 + 10
-           = 15
-```
-
-**Call Stack Visualization:**
-
-```
-Level 1: sumOfN(5)
-         ↓ (waiting for sumOfN(4))
-Level 2: sumOfN(4)
-         ↓ (waiting for sumOfN(3))
-Level 3: sumOfN(3)
-         ↓ (waiting for sumOfN(2))
-Level 4: sumOfN(2)
-         ↓ (waiting for sumOfN(1))
-Level 5: sumOfN(1)
-         ↓ (waiting for sumOfN(0))
-Level 6: sumOfN(0) → Returns 0
-         ↑ (returns 1+0=1)
-Level 5: returns 2+1=3
-         ↑ (returns 3+3=6)
-Level 4: returns 4+6=10
-         ↑ (returns 5+10=15)
-Level 3: returns 15
-
-Final Result: 15
-```
-
-</details>
-
----
-
-<details open>
-<summary><h3>🔢 Advanced Recursion: Factorial, Permutation, Combination</h3></summary>
-
-> **Factorial** is the basis for permutation and combination calculations in combinatorics.
-
-### 1️⃣ **Factorial - n!**
-
-**Definition:** n! = n × (n-1) × (n-2) × ... × 1
-
-```java
-public class Factorial {
-    
-    public static int fact(int n) {
-        // Base case
-        if (n == 1 || n == 0) {
-            return 1;
-        }
-        
-        // Recursive case: n! = n * (n-1)!
-        return n * fact(n - 1);
-    }
-    
-    public static void main(String[] args) {
-        System.out.println("5! = " + fact(5));   // 120
-        System.out.println("0! = " + fact(0));   // 1
-        System.out.println("10! = " + fact(10)); // 3628800
-    }
-}
-```
-
-**Dry Run: `fact(5)`**
-
-```
-fact(5) = 5 * fact(4)
-        = 5 * (4 * fact(3))
-        = 5 * (4 * (3 * fact(2)))
-        = 5 * (4 * (3 * (2 * fact(1))))
-        = 5 * (4 * (3 * (2 * 1)))
-        = 5 * (4 * (3 * 2))
-        = 5 * (4 * 6)
-        = 5 * 24
-        = 120
-```
-
----
-
-### 2️⃣ **Permutation - P(n, r)**
-
-**Definition:** P(n,r) = n! / (n-r)!
-
-Permutation is an arrangement of n objects taken r at a time, where **order matters**.
-
-```java
-public class Permutation {
-    
-    public static int fact(int n) {
-        if (n == 1 || n == 0) {
-            return 1;
-        }
-        return n * fact(n - 1);
-    }
-    
-    public static void main(String[] args) {
-        int n = 5;
-        int r = 3;
-        
-        // P(5,3) = 5! / (5-3)! = 120 / 2 = 60
-        int numerator = fact(n);        // 5! = 120
-        int denominator = fact(n - r);  // 2! = 2
-        int perm = numerator / denominator;
-        
-        System.out.println("P(" + n + "," + r + ") = " + perm);
-        // Output: P(5,3) = 60
-    }
-}
-```
-
-**Example: Arrange 5 students in 3 positions**
-
-```
-P(5,3) = 5!/(5-3)! = 5!/2! = 120/2 = 60
-
-This means:
-- Position 1: Choose from 5 students
-- Position 2: Choose from remaining 4 students
-- Position 3: Choose from remaining 3 students
-- Total: 5 × 4 × 3 = 60 ways
-```
-
----
-
-### 3️⃣ **Combination - C(n, r)**
-
-**Definition:** C(n,r) = n! / (r! × (n-r)!)
-
-Combination is a selection of n objects taken r at a time, where **order doesn't matter**.
-
-```java
-public class Combination {
-    
-    public static int fact(int n) {
-        if (n == 1 || n == 0) {
-            return 1;
-        }
-        return n * fact(n - 1);
-    }
-    
-    public static void main(String[] args) {
-        int n = 5;
-        int r = 3;
-        
-        // C(5,3) = 5! / (3! × (5-3)!) = 120 / (6 × 2) = 10
-        int numerator = fact(n);           // 5! = 120
-        int denominator = fact(r) * fact(n - r);  // 3! × 2! = 6 × 2 = 12
-        int comb = numerator / denominator;
-        
-        System.out.println("C(" + n + "," + r + ") = " + comb);
-        // Output: C(5,3) = 10
-    }
-}
-```
-
-**Example: Choose 3 fruits from 5 types**
-
-```
-C(5,3) = 5!/(3! × 2!) = 120/(6 × 2) = 10
-
-Different ways to choose 3 from {Apple, Banana, Orange, Mango, Grapes}:
-1. Apple, Banana, Orange
-2. Apple, Banana, Mango
-3. Apple, Banana, Grapes
-4. Apple, Orange, Mango
-5. Apple, Orange, Grapes
-6. Apple, Mango, Grapes
-7. Banana, Orange, Mango
-8. Banana, Orange, Grapes
-9. Banana, Mango, Grapes
-10. Orange, Mango, Grapes
-
-Total: 10 combinations
-```
-
----
-
-### 📊 Permutation vs Combination
-
-| Aspect | Permutation | Combination |
-|:-------|:-----------:|:----------:|
-| **Order** | Matters ✅ | Doesn't matter ❌ |
-| **Formula** | P(n,r) = n!/(n-r)! | C(n,r) = n!/(r!(n-r)!) |
-| **Example** | Arranging books | Selecting books |
-| **Example Value** | P(5,3) = 60 | C(5,3) = 10 |
-| **Use Case** | Passwords, rankings | Teams, committees |
-
-</details>
-
----
-
-<details open>
-<summary><h3>⚡ Quick Sort - Recursive Implementation</h3></summary>
-
-> **Quick Sort** is a divide-and-conquer sorting algorithm that partitions array around a pivot and recursively sorts the partitions.
-
-### 🎯 Quick Sort Algorithm
-
-1. Pick a **pivot** element
-2. Partition: elements smaller go left, larger go right
-3. Recursively sort left and right partitions
-4. Combine
-
-**Time Complexity:** O(n log n) average, O(n²) worst case
-**Space Complexity:** O(log n) - recursion stack
-
-### 1️⃣ **Simple Quick Sort Implementation**
-
-```java
-import java.util.ArrayList;
-import java.util.Arrays;
-
-public class QuickSort {
-    
-    public static ArrayList<Integer> quickSort(ArrayList<Integer> arr) {
-        // Base case: array with 0 or 1 element is already sorted
-        if (arr.size() <= 1) {
-            return arr;
-        }
-        
-        // Choose pivot as first element
-        int pivot = arr.get(0);
-        ArrayList<Integer> small = new ArrayList<>();
-        ArrayList<Integer> big = new ArrayList<>();
-        
-        // Partition: separate smaller and larger elements
-        for (int i = 1; i < arr.size(); i++) {
-            if (arr.get(i) > pivot) {
-                big.add(arr.get(i));
-            } else {
-                small.add(arr.get(i));
-            }
-        }
-        
-        // Recursively sort and combine
-        ArrayList<Integer> result = new ArrayList<>();
-        result.addAll(quickSort(big));    // Larger elements first (descending)
-        result.add(pivot);                // Add pivot in middle
-        result.addAll(quickSort(small));  // Smaller elements last
-        
-        return result;
-    }
-    
-    public static void main(String[] args) {
-        ArrayList<Integer> arr = new ArrayList<>(
-            Arrays.asList(45, 13, 44, 99, 98, 1, 47)
-        );
-        
-        System.out.println("Original: " + arr);
-        ArrayList<Integer> sorted = quickSort(arr);
-        System.out.println("Sorted: " + sorted);
-        // Output: [99, 98, 47, 45, 44, 13, 1] (descending)
-    }
-}
-```
-
-**Output:**
-```
-Original: [45, 13, 44, 99, 98, 1, 47]
-Sorted: [99, 98, 47, 45, 44, 13, 1]
-```
-
----
-
-### 2️⃣ **Dry Run: `quickSort([45, 13, 44, 99, 98, 1, 47])`**
-
-```
-Initial: [45, 13, 44, 99, 98, 1, 47], pivot=45
-
-Partition:
-- Small (≤45): [13, 44, 1]
-- Big (>45): [99, 98, 47]
-
-Result = quickSort(Big) + [45] + quickSort(Small)
-
-Sorting Big [99, 98, 47]:
-  Pivot=99
-  Small=[98, 47], Big=[]
-  Result = quickSort([]) + [99] + quickSort([98, 47])
-  
-  Sorting [98, 47]:
-    Pivot=98
-    Small=[47], Big=[]
-    Result = [] + [98] + [47] = [98, 47]
-  
-  So Big sorted = [] + [99] + [98, 47] = [99, 98, 47]
-
-Sorting Small [13, 44, 1]:
-  Pivot=13
-  Small=[1], Big=[44]
-  Result = quickSort([44]) + [13] + quickSort([1])
-  
-  Sorting [44]: Returns [44] (size 1)
-  Sorting [1]: Returns [1] (size 1)
-  
-  So Small sorted = [44] + [13] + [1] = [44, 13, 1]
-
-Final Result = [99, 98, 47] + [45] + [44, 13, 1]
-             = [99, 98, 47, 45, 44, 13, 1]
-```
-
----
-
-### 📊 Quick Sort Visualization
-
-```
-Original: [45, 13, 44, 99, 98, 1, 47]
-
-         45
-        /  \
-    [13,44,1] [99,98,47]
-    /          \
-   13          99
-  /  \        /  \
-[1] [44]    [98,47] []
-           /
-          98
-         /  \
-      [47]  []
-
-Result (In-Order): 99, 98, 47, 45, 44, 13, 1
-```
-
-</details>
-
----
-
-## ✅ Problems Covered - Day 1
+## ✅ DAY 1 - Problems Covered
 
 ### 📋 **Collections & Arrays**
 
@@ -1567,26 +872,12 @@ Result (In-Order): 99, 98, 47, 45, 44, 13, 1
 
 ---
 
-## ✅ Problems Covered - Day 2
+# 📅 DAY 2: Set & Map Interfaces
 
-### 📋 **Set & Map Interfaces**
-
-| # | Problem | Difficulty | Concept | Status |
-|:-:|:--------|:----------:|:--------|:------:|
-| 1 | Set Interface Basics | 🟢 Easy | HashSet, LinkedHashSet, TreeSet | ✅ |
-| 2 | Iterator Pattern | 🟢 Easy | Iterator, hasNext(), next() | ✅ |
-| 3 | Check Duplicates Method 1 | 🟡 Medium | Set Size Comparison | ✅ |
-| 4 | Check Duplicates Method 2 | 🟡 Medium | Set + List Combination | ✅ |
-| 5 | HashMap Basic Operations | 🟡 Medium | put(), get(), containsKey() | ✅ |
-| 6 | HashMap Frequency Counting | 🟡 Medium | Frequency Map Pattern | ✅ |
-| 7 | Entry Set Iteration | 🟡 Medium | Map.Entry, entrySet() | ✅ |
-
----
-
-## 📚 Topics Covered - Day 2
+## 📚 DAY 2 - Topics
 
 <details open>
-<summary><h3>📦 Set Interface - Complete Guide</h3></summary>
+<summary><h3>🎭 Set Interface - Complete Guide</h3></summary>
 
 > **Set** is a collection that contains no duplicate elements. It models the mathematical set abstraction.
 
@@ -1746,9 +1037,9 @@ System.out.println(set.higher(51)); // 99 (next higher)
 | **Memory** | Low | Medium | High |
 | **Use Case** | Speed | Order + Speed | Sorted |
 
----
-
 </details>
+
+---
 
 <details open>
 <summary><h3>🔄 Iterator Pattern - Collection Traversal</h3></summary>
@@ -1796,29 +1087,6 @@ while(iterator.hasNext()) {
 }
 ```
 
-### 🔄 Traversal Methods Comparison
-
-```java
-Set<Integer> set = new HashSet<>(Arrays.asList(1, 2, 3, 4, 5));
-
-// Method 1: Enhanced for loop (Simplified Iterator)
-for(int val : set) {
-    System.out.println(val);
-}
-
-// Method 2: Explicit Iterator
-Iterator<Integer> it = set.iterator();
-while(it.hasNext()) {
-    System.out.println(it.next());
-}
-
-// Method 3: forEach (Java 8+)
-set.forEach(val -> System.out.println(val));
-
-// Method 4: Stream (Java 8+)
-set.stream().forEach(System.out::println);
-```
-
 ---
 
 </details>
@@ -1840,7 +1108,6 @@ public class CheckDuplicatesMethod1 {
         Set<Integer> set = new HashSet<>();
         
         int[] arr = {1, 4, 1, 4, 2, 6, 7, 9, 1};
-        // int[] arr = {1, 4};  // Try this too
         
         for(int val : arr) {
             set.add(val);
@@ -1854,18 +1121,6 @@ public class CheckDuplicatesMethod1 {
         }
     }
 }
-```
-
-**How it works:**
-```
-Array:  [1, 4, 1, 4, 2, 6, 7, 9, 1]
-          ↓
-Set:    {1, 2, 4, 6, 7, 9}
-
-arr.length = 9
-set.size() = 6
-
-9 != 6 → Duplicates exist! ✅
 ```
 
 **Complexity:**
@@ -1892,7 +1147,6 @@ public class CheckDuplicatesMethod2 {
         
         for(int i = 0; i < arr.length; i++) {
             if(set.contains(arr[i])) {
-                // Element already in set = duplicate found!
                 duplicates.add(arr[i]);
                 hasDuplicates = true;
             }
@@ -1905,57 +1159,9 @@ public class CheckDuplicatesMethod2 {
 }
 ```
 
-**Dry Run:**
-```
-Step 1: arr[0]=1
-        set doesn't contain 1 → add 1
-        set = {1}
-
-Step 2: arr[1]=4
-        set doesn't contain 4 → add 4
-        set = {1, 4}
-
-Step 3: arr[2]=1
-        set contains 1! → add to duplicates
-        duplicates = [1]
-        set = {1, 4}
-
-Step 4: arr[3]=4
-        set contains 4! → add to duplicates
-        duplicates = [1, 4]
-        set = {1, 4}
-
-Step 5: arr[4]=2
-        set doesn't contain 2 → add 2
-        set = {1, 4, 2}
-
-... continue ...
-
-Final Result:
-hasDuplicates = true
-duplicates = [1, 4, 1]
-```
-
-**Complexity:**
-- ⏱️ **Time:** O(n)
-- 💾 **Space:** O(n)
-- ✨ **Advantage:** Identifies which elements are duplicated
-
----
-
-### 📊 Method Comparison
-
-| Aspect | Method 1 | Method 2 |
-|:-------|:--------:|:--------:|
-| **Time** | O(n) | O(n) |
-| **Space** | O(n) | O(n) |
-| **Tells duplicates** | ❌ No | ✅ Yes |
-| **Code length** | Shorter | Longer |
-| **When to use** | Just check | Need details |
-
----
-
 </details>
+
+---
 
 <details open>
 <summary><h3>🗺️ Map Interface - Key-Value Pairs</h3></summary>
@@ -1995,32 +1201,20 @@ public class HashMapDemo {
         System.out.println(map);
         // Output: {Tithee=56, Shivam=99, Sejal=12}
         
-        // PUT IF ABSENT - Insert only if key doesn't exist | O(1)
-        map.putIfAbsent("Shiva", 90);  // New key, added
-        map.putIfAbsent("Shivam", 100); // Key exists, ignored
-        
-        System.out.println(map);
-        // Output: {Shiva=90, Tithee=56, Shivam=99, Sejal=12}
-        
         // GET - Retrieve value by key | O(1) average
         System.out.println(map.get("Shivam"));  // 99
-        System.out.println(map.get("Mohini"));  // null (key doesn't exist)
+        System.out.println(map.get("Mohini"));  // null
         
         // CONTAINS KEY - Check if key exists | O(1) average
         System.out.println(map.containsKey("Shivam"));  // true
         System.out.println(map.containsKey("Mohini"));  // false
         
-        // CONTAINS VALUE - Check if value exists | O(n)
-        System.out.println(map.containsValue(56));   // true
-        System.out.println(map.containsValue(100));  // false
-        
         // REMOVE - Delete key-value pair | O(1) average
         map.remove("Sejal");
         System.out.println("After remove: " + map);
-        // Output: {Shiva=90, Tithee=56, Shivam=99}
         
         // SIZE - Get total pairs | O(1)
-        System.out.println("Size: " + map.size());  // 3
+        System.out.println("Size: " + map.size());  // 2
     }
 }
 ```
@@ -2039,7 +1233,7 @@ public class HashMapDemo {
 
 ### 2️⃣ **HashMap - Entry Set Iteration**
 
-> **Entry Set** provides efficient iteration over key-value pairs without calculating value again.
+> **Entry Set** provides efficient iteration over key-value pairs.
 
 ```java
 import java.util.*;
@@ -2052,43 +1246,11 @@ public class HashMapIterationDemo {
         map.put("Sejal", 12);
         map.put("Tithee", 56);
         
-        System.out.println("Method 1: Using entrySet()");
+        System.out.println("Using entrySet():");
         for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            System.out.println(entry);
-            // Output: Shivam=99, Sejal=12, Tithee=56
-        }
-        
-        System.out.println("\nMethod 2: Get key and value separately");
-        for (Map.Entry<String, Integer> entry : map.entrySet()) {
-            String key = entry.getKey();
-            Integer value = entry.getValue();
-            System.out.println(key + " → " + value);
-        }
-        
-        System.out.println("\nMethod 3: Using keySet()");
-        for (String key : map.keySet()) {
-            System.out.println(key + " → " + map.get(key));
-        }
-        
-        System.out.println("\nMethod 4: Using values()");
-        for (Integer value : map.values()) {
-            System.out.println(value);
+            System.out.println(entry.getKey() + " → " + entry.getValue());
         }
     }
-}
-```
-
-**Why use entrySet()?**
-```
-❌ INEFFICIENT - Calculates value twice:
-for (String key : map.keySet()) {
-    map.get(key);  // O(1) but repeated lookup
-}
-
-✅ EFFICIENT - Get entry once:
-for (Map.Entry<String, Integer> e : map.entrySet()) {
-    e.getKey();   // O(1)
-    e.getValue(); // O(1)
 }
 ```
 
@@ -2110,11 +1272,9 @@ public class FrequencyCountingDemo {
         // Step 1: Count frequencies
         for (int i = 0; i < arr.length; i++) {
             if(map.containsKey(arr[i])) {
-                // Key exists, increment count
                 map.put(arr[i], map.get(arr[i]) + 1);
             }
             else {
-                // New key, add with count 1
                 map.put(arr[i], 1);
             }
         }
@@ -2135,186 +1295,31 @@ public class FrequencyCountingDemo {
 }
 ```
 
-**Dry Run:**
-```
-Array: [1, 4, 1, 4, 2, 1, 7, 9, 1]
-n = 9, threshold = 9/3 = 3
-
-i=0: arr[0]=1 → map = {1: 1}
-i=1: arr[1]=4 → map = {1: 1, 4: 1}
-i=2: arr[2]=1 → map = {1: 2, 4: 1}
-i=3: arr[3]=4 → map = {1: 2, 4: 2}
-i=4: arr[4]=2 → map = {1: 2, 4: 2, 2: 1}
-i=5: arr[5]=1 → map = {1: 3, 4: 2, 2: 1}
-i=6: arr[6]=7 → map = {1: 3, 4: 2, 2: 1, 7: 1}
-i=7: arr[7]=9 → map = {1: 3, 4: 2, 2: 1, 7: 1, 9: 1}
-i=8: arr[8]=1 → map = {1: 4, 4: 2, 2: 1, 7: 1, 9: 1}
-
-Final Map: {1: 4, 2: 1, 4: 2, 7: 1, 9: 1}
-
-Check threshold = 3:
-- 1 appears 4 times (4 > 3) ✅
-- Others appear ≤ 3 times ❌
-
-Result: Element 1 appears more than n/3 times!
-```
-
-**Complexity:**
-- ⏱️ **Time:** O(n)
-- 💾 **Space:** O(n)
-
----
-
-### 📊 Map Comparison Table
-
-| Feature | HashMap | LinkedHashMap | TreeMap |
-|:--------|:-------:|:-------------:|:-------:|
-| **Order** | Random | Insertion | Sorted by key |
-| **Put** | O(1) avg | O(1) avg | O(log n) |
-| **Get** | O(1) avg | O(1) avg | O(log n) |
-| **Contains** | O(1) avg | O(1) avg | O(log n) |
-| **Memory** | Low | Medium | Medium |
-| **Use Case** | Speed | Order + Speed | Sorted keys |
-
----
+**Complexity:** O(n) time, O(n) space
 
 </details>
 
-## 📚 Quick Reference
+---
 
-### 🎓 Key Concepts to Remember
+## ✅ DAY 2 - Problems Covered
 
-```
-DAY 1 SUMMARY:
+### 📋 **Set & Map Interfaces**
 
-1. ARRAYS:
-   - Fixed size, indexed access O(1)
-   - Use for: fixed-size collections
-   - Enhanced for loop: for(int x : arr)
-
-2. ARRAYLIST:
-   - Dynamic size, indexed access O(1)
-   - Common methods: add(), get(), remove(), set()
-   - Use for: flexible collections
-
-3. COLLECTIONS:
-   - List: ordered with duplicates
-   - Queue: FIFO processing
-   - Map: key-value pairs
-   - Set: unordered, no duplicates
-
-4. LISTS:
-   - ArrayList: random access O(1), add/remove O(n)
-   - LinkedList: fast add/remove O(1) at ends
-
-5. PROBLEM-SOLVING:
-   - Move Zeroes: Two Pointers technique O(n)
-   - Brute Force: O(n²) time, O(1) space
-   - HashSet: O(n) time, O(n) space - RECOMMENDED
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Set Interface Basics | 🟢 Easy | HashSet, LinkedHashSet, TreeSet | ✅ |
+| 2 | Iterator Pattern | 🟢 Easy | Iterator, hasNext(), next() | ✅ |
+| 3 | Check Duplicates Method 1 | 🟡 Medium | Set Size Comparison | ✅ |
+| 4 | Check Duplicates Method 2 | 🟡 Medium | Set + List Combination | ✅ |
+| 5 | HashMap Basic Operations | 🟡 Medium | put(), get(), containsKey() | ✅ |
+| 6 | HashMap Frequency Counting | 🟡 Medium | Frequency Map Pattern | ✅ |
+| 7 | Entry Set Iteration | 🟡 Medium | Map.Entry, entrySet() | ✅ |
 
 ---
 
-DAY 2 SUMMARY:
+# 📅 DAY 3: Queue, Comparators & Advanced Techniques
 
-1. SETS:
-   - HashSet: O(1) average, unordered, fastest
-   - LinkedHashSet: O(1) average, maintains insertion order
-   - TreeSet: O(log n), maintains sorted order
-   - All prevent duplicates
-
-2. SET OPERATIONS:
-   - add(), remove(), contains() - all O(1) avg in HashSet
-   - Iterator pattern for traversal
-   - size(), isEmpty() for checking
-
-3. CHECK DUPLICATES:
-   - Method 1: Compare set.size() with array.length - simple
-   - Method 2: Set.contains() check - tracks duplicates
-   - Time: O(n), Space: O(n)
-
-4. MAPS:
-   - HashMap: O(1) average, unordered, fastest
-   - LinkedHashMap: O(1) average, maintains insertion order
-   - TreeMap: O(log n), maintains sorted keys
-   - Each key maps to exactly one value
-
-5. MAP OPERATIONS:
-   - put(), get(), remove() - O(1) avg in HashMap
-   - containsKey() - O(1) avg
-   - entrySet() for efficient iteration
-   - Frequency counting pattern
-
-6. FREQUENCY COUNTING:
-   - Use map.containsKey() to check if element exists
-   - Increment count if exists, else put with count 1
-   - Iterate using entrySet() for efficiency
-   - Time: O(n), Space: O(n)
-```
-
----
-
-## 💻 Code Structure Best Practices
-
-```java
-// Good practice: Use appropriate collections
-
-// ✅ When you need index access and frequent lookup
-ArrayList<String> names = new ArrayList<>();
-
-// ✅ When you need FIFO behavior
-Queue<Integer> tasks = new LinkedList<>();
-
-// ✅ When you need key-value mapping
-Map<String, Integer> ageCounts = new HashMap<>();
-
-// ✅ When you need list-like with fast add/remove
-LinkedList<String> commands = new LinkedList<>();
-```
-
----
-
-## 🎯 Learning Tips
-
-<table>
-<tr>
-<td>
-
-### 📖 Study Tips
-1. **Code along** - Type every example yourself
-2. **Dry run** - Manually trace through code
-3. **Experiment** - Modify code and observe changes
-4. **Understand** - Know WHY before memorizing
-
-</td>
-<td>
-
-### 💪 Practice Tips
-5. **Solve variations** - Try different inputs
-6. **Compare approaches** - Brute force vs optimal
-7. **Analyze complexity** - Time and space always
-8. **Build intuition** - Practice similar problems
-
-</td>
-</tr>
-</table>
-
----
-
-## 🏆 Performance Cheat Sheet
-
-### Collections Time Complexity
-
-```
-                Access    Add    Remove   Contains
-ArrayList       O(1)     O(n)    O(n)     O(n)
-LinkedList      O(n)     O(1)    O(1)     O(n)
-HashMap         —        O(1)    O(1)     O(1)
-TreeMap         —        O(log n) O(log n) O(log n)
-PriorityQueue   O(n)     O(log n) O(log n) O(n)
-```
-
----
-
+## 📚 DAY 3 - Topics
 
 <details open>
 <summary><h3>📬 Queue Interface - FIFO & Priority</h3></summary>
@@ -2356,30 +1361,17 @@ public class QueueBasics {
         System.out.println("Removed: " + q.remove());  // 55
         System.out.println("Queue: " + q);  // [98]
         
-        // Remove remaining
-        System.out.println("Removed: " + q.remove());  // 98
-        
         // PEEK - Get first element (returns null if empty) | O(1)
-        System.out.println("Peek: " + q.peek());  // null
+        System.out.println("Peek: " + q.peek());  // 98
     }
 }
 ```
-
-**Key Methods:**
-| Method | Returns | Behavior | Exception |
-|:-------|:--------|:---------|:---------:|
-| `add(E)` | boolean | Insert at end | Full queue |
-| `offer(E)` | boolean | Insert at end | False if full |
-| `element()` | E | Get first | NoSuchElementException |
-| `peek()` | E | Get first | null |
-| `remove()` | E | Remove first | NoSuchElementException |
-| `poll()` | E | Remove first | null |
 
 ---
 
 ### 2️⃣ **ArrayDeque - Double-Ended Queue**
 
-> **ArrayDeque** (Array Double Ended Queue) allows insertion and removal from both ends efficiently.
+> **ArrayDeque** allows insertion and removal from both ends efficiently.
 
 ```java
 import java.util.*;
@@ -2398,7 +1390,6 @@ public class ArrayDequeDemo {
         // PEEK operations - View elements
         System.out.println("First: " + deque.peekFirst());  // 2
         System.out.println("Last: " + deque.peekLast());    // 100
-        System.out.println("Peek: " + deque.peek());        // 2
         
         // POLL operations - Remove elements
         System.out.println("Poll first: " + deque.pollFirst());  // 2
@@ -2408,32 +1399,20 @@ public class ArrayDequeDemo {
 }
 ```
 
-**Deque Methods:**
-```
-Front Operations:          Rear Operations:
-offerFirst(E)             offerLast(E)
-peekFirst()               peekLast()
-pollFirst()               pollLast()
-getFirst()                getLast()
-removeFirst()             removeLast()
-```
-
-**Complexity:**
-- ⏱️ **Time:** O(1) for all operations
-- 💾 **Space:** O(n) where n is number of elements
+**Complexity:** O(1) for all operations
 
 ---
 
 ### 3️⃣ **PriorityQueue - Min/Max Heap**
 
-> **PriorityQueue** maintains elements in priority order (default: min heap). Useful for scheduling, load balancing, etc.
+> **PriorityQueue** maintains elements in priority order (default: min heap).
 
 ```java
 import java.util.*;
 
 public class PriorityQueueDemo {
     public static void main(String[] args) {
-        // Min Heap (default) - smaller elements have higher priority
+        // Min Heap (default)
         PriorityQueue<Integer> minHeap = new PriorityQueue<>();
         
         minHeap.offer(55);
@@ -2444,21 +1423,9 @@ public class PriorityQueueDemo {
         System.out.println("Min Heap: " + minHeap);
         // Output: [1, 8, 55, 100]
         
-        // Poll removes minimum element
         System.out.println("Polled: " + minHeap.poll());  // 1
-        System.out.println("After poll: " + minHeap);     // [8, 55, 100]
-    }
-}
-```
-
-**Max Heap using Comparator:**
-
-```java
-import java.util.*;
-
-public class MaxHeapDemo {
-    public static void main(String[] args) {
-        // Max Heap - larger elements have higher priority
+        
+        // Max Heap
         PriorityQueue<Integer> maxHeap = new PriorityQueue<>(
             Comparator.reverseOrder()
         );
@@ -2471,168 +1438,60 @@ public class MaxHeapDemo {
         System.out.println("Max Heap: " + maxHeap);
         // Output: [100, 55, 8, 1]
         
-        // Poll removes maximum element
         System.out.println("Polled: " + maxHeap.poll());  // 100
-        System.out.println("After poll: " + maxHeap);     // [55, 8, 1]
     }
 }
 ```
 
-**PriorityQueue Complexity:**
+**Complexity:**
 | Operation | Time |
 |:----------|:----:|
 | add/offer | O(log n) |
 | peek | O(1) |
 | poll | O(log n) |
-| contains | O(n) |
-
----
-
-### ⚡ Problem: Find K Largest Elements
-
-**Problem:** Find the k largest elements in an array efficiently.
-
-```java
-import java.util.*;
-
-public class KLargestElements {
-    public static void main(String[] args) {
-        int[] arr = {5, 1, 10, 2, 8, 12, 3};
-        int k = 3;
-        
-        // Min Heap approach - maintain k largest
-        PriorityQueue<Integer> minHeap = new PriorityQueue<>();
-        
-        for (int val : arr) {
-            minHeap.offer(val);
-            
-            // Keep only k elements
-            // When size > k, remove smallest
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
-        }
-        
-        System.out.println("K largest: " + minHeap);
-        // Output: [8, 10, 12] (k=3 largest elements)
-    }
-}
-```
-
-**How it works:**
-```
-arr = [5, 1, 10, 2, 8, 12, 3], k = 3
-
-Step 1: offer 5 → heap = [5]
-Step 2: offer 1 → heap = [1, 5]
-Step 3: offer 10 → heap = [1, 5, 10]
-Step 4: offer 2 → heap = [1, 5, 10], size=4 > k, poll → heap = [2, 5, 10]
-Step 5: offer 8 → heap = [2, 5, 8, 10], size=4 > k, poll → heap = [5, 8, 10]
-Step 6: offer 12 → heap = [5, 8, 10, 12], size=4 > k, poll → heap = [8, 10, 12]
-Step 7: offer 3 → heap = [3, 8, 10, 12], size=4 > k, poll → heap = [8, 10, 12]
-
-Result: [8, 10, 12] (3 largest elements) ✅
-```
-
-**Complexity:** O(n log k) - much better than sorting all!
-
----
-
-### 🎯 K Smallest Elements (Max Heap)
-
-```java
-PriorityQueue<Integer> maxHeap = new PriorityQueue<>(Comparator.reverseOrder());
-
-int k = 3;
-for (int val : arr) {
-    maxHeap.offer(val);
-    if (maxHeap.size() > k) {
-        maxHeap.poll();  // Remove largest
-    }
-}
-
-System.out.println("K smallest: " + maxHeap);
-// Output: [1, 2, 3] (k=3 smallest elements)
-```
-
----
 
 </details>
+
+---
 
 <details open>
 <summary><h3>👥 Comparators - Custom Sorting</h3></summary>
 
 > **Comparator** defines custom sorting logic for objects beyond natural ordering.
 
-### 1️⃣ **Anonymous Class Comparator**
+### 1️⃣ **Lambda Expression Comparator (Java 8+)**
 
 ```java
 import java.util.*;
 
-public class ComparatorDemo1 {
+public class ComparatorDemo {
     public static void main(String[] args) {
         List<Integer> arrList = new ArrayList<>(
             Arrays.asList(45, 12, 23, 90)
         );
         
         // Sort by last digit
-        Comparator<Integer> byLastDigit = new Comparator<Integer>() {
-            @Override
-            public int compare(Integer a, Integer b) {
-                if (a % 10 > b % 10) {
-                    return 1;    // a comes after b
-                } else {
-                    return -1;   // a comes before b
-                }
-            }
+        Comparator<Integer> byLastDigit = (Integer a, Integer b) -> {
+            return (a % 10) - (b % 10);
         };
         
         Collections.sort(arrList, byLastDigit);
         System.out.println(arrList);
-        // Output: [12, 23, 45, 90] (sorted by last digit: 2, 3, 5, 0)
+        // Output: [12, 23, 45, 90]
     }
 }
 ```
 
 **Compare return values:**
 ```
-return 1  → First param comes after second
-return -1 → First param comes before second
-return 0  → Equal order
+Positive  → First param comes after second
+Negative  → First param comes before second
+Zero      → Equal order
 ```
 
 ---
 
-### 2️⃣ **Lambda Expression Comparator (Java 8+)**
-
-```java
-import java.util.*;
-
-public class ComparatorDemo2 {
-    public static void main(String[] args) {
-        List<Integer> arrList = new ArrayList<>(
-            Arrays.asList(45, 12, 23, 90)
-        );
-        
-        // Sort by: evens first, then odds
-        Comparator<Integer> evenFirst = (Integer a, Integer b) -> {
-            if (a % 2 == 0) {
-                return -1;  // Even comes first
-            } else {
-                return 1;   // Odd comes last
-            }
-        };
-        
-        Collections.sort(arrList, evenFirst);
-        System.out.println(arrList);
-        // Output: [12, 90, 45, 23] (evens: 12, 90; odds: 45, 23)
-    }
-}
-```
-
----
-
-### 3️⃣ **Sorting Custom Objects**
+### 2️⃣ **Sorting Custom Objects**
 
 ```java
 class Student {
@@ -2655,34 +1514,25 @@ public class SortStudents {
         List<Student> students = new ArrayList<>();
         
         Comparator<Student> byAge = (Student a, Student b) -> {
-            if (a.age > b.age)
-                return 1;
-            else
-                return -1;
+            return a.age - b.age;
         };
         
         students.add(new Student(26, "Shivam"));
         students.add(new Student(29, "Mohini"));
         students.add(new Student(24, "Sejal"));
-        students.add(new Student(22, "Titheee"));
+        students.add(new Student(22, "Tithee"));
         
         Collections.sort(students, byAge);
         
         for (Student val : students)
             System.out.println(val);
-        
-        // Output:
-        // Student{name=Titheee, age=22}
-        // Student{name=Sejal, age=24}
-        // Student{name=Shivam, age=26}
-        // Student{name=Mohini, age=29}
     }
 }
 ```
 
----
-
 </details>
+
+---
 
 <details open>
 <summary><h3>👉 Two Pointers Technique</h3></summary>
@@ -2690,8 +1540,6 @@ public class SortStudents {
 > **Two Pointers** uses two indices to solve problems efficiently, reducing complexity from O(n²) to O(n).
 
 ### 1️⃣ **Type 1: Opposite Direction (Start & End)**
-
-**Use when:** Looking for pairs that sum to target, valid palindromes, etc.
 
 ```java
 public class TwoPointersOpposite {
@@ -2710,13 +1558,11 @@ public class TwoPointersOpposite {
                 System.out.println("Found: " + arr[left] + " + " + arr[right]);
                 return;
             } else if (sum < target) {
-                left++;  // Need larger sum
+                left++;
             } else {
-                right--;  // Need smaller sum
+                right--;
             }
         }
-        
-        System.out.println("No pair found");
     }
 }
 ```
@@ -2727,17 +1573,13 @@ public class TwoPointersOpposite {
 
 ### 2️⃣ **Type 2: Same Direction (Slow & Fast)**
 
-**Use when:** Removing duplicates, moving elements, linked list problems.
-
 ```java
 public class TwoPointersSameDirection {
-    // Problem: Move all zeros to end
     public static void moveZeroes(int[] arr) {
-        int j = 0;  // Position for next non-zero
+        int j = 0;
         
         for (int i = 0; i < arr.length; i++) {
             if (arr[i] != 0) {
-                // Swap
                 int temp = arr[i];
                 arr[i] = arr[j];
                 arr[j] = temp;
@@ -2761,15 +1603,10 @@ public class TwoPointersSameDirection {
 
 ### 3️⃣ **Type 3: Pointer in Different Arrays**
 
-**Use when:** Merging sorted arrays, finding common elements.
-
 ```java
 public class TwoPointersDifferentArrays {
-    // Problem: Merge two sorted arrays
     public static void merge(int[] arr1, int[] arr2, int[] result) {
-        int p1 = 0;     // Pointer for arr1
-        int p2 = 0;     // Pointer for arr2
-        int p = 0;      // Pointer for result
+        int p1 = 0, p2 = 0, p = 0;
         
         while (p1 < arr1.length && p2 < arr2.length) {
             if (arr1[p1] <= arr2[p2]) {
@@ -2779,13 +1616,8 @@ public class TwoPointersDifferentArrays {
             }
         }
         
-        // Add remaining elements
-        while (p1 < arr1.length) {
-            result[p++] = arr1[p1++];
-        }
-        while (p2 < arr2.length) {
-            result[p++] = arr2[p2++];
-        }
+        while (p1 < arr1.length) result[p++] = arr1[p1++];
+        while (p2 < arr2.length) result[p++] = arr2[p2++];
     }
     
     public static void main(String[] args) {
@@ -2800,16 +1632,14 @@ public class TwoPointersDifferentArrays {
 }
 ```
 
-**Complexity:** O(m + n) time, O(m + n) space
+</details>
 
 ---
-
-</details>
 
 <details open>
 <summary><h3>🪟 Sliding Window Technique</h3></summary>
 
-> **Sliding Window** maintains a fixed-size window that slides through the array, useful for contiguous subarrays.
+> **Sliding Window** maintains a fixed-size or variable-size window that slides through the array.
 
 ### 1️⃣ **Fixed-Size Window**
 
@@ -2831,30 +1661,14 @@ public class FixedSlidingWindow {
         
         // Step 2: Slide window across array
         for (int i = k; i < arr.length; i++) {
-            // Remove leftmost element of previous window
-            // Add new rightmost element
             currentSum += arr[i] - arr[i - k];
-            
-            // Update maximum
             maxSum = Math.max(maxSum, currentSum);
         }
         
         System.out.println("Maximum sum: " + maxSum);
-        System.out.println("Average: " + (float) maxSum / k);
-        // Output: Maximum sum: 41, Average: 10.25
+        // Output: Maximum sum: 51
     }
 }
-```
-
-**Dry Run:**
-```
-Array: [1, 12, -5, -6, 50, 3], k = 4
-
-Window [1, 12, -5, -6] → sum = 2
-Window [12, -5, -6, 50] → sum = 51
-Window [-5, -6, 50, 3] → sum = 42
-
-Maximum: 51 ✅
 ```
 
 **Complexity:** O(n) time, O(1) space
@@ -2879,44 +1693,27 @@ public class VariableSlidingWindow {
         for (int right = 0; right < s.length(); right++) {
             char ch = s.charAt(right);
             
-            // If character already exists, move left pointer
             if (charIndex.containsKey(ch)) {
                 left = Math.max(left, charIndex.get(ch) + 1);
             }
             
-            // Update character's latest position
             charIndex.put(ch, right);
-            
-            // Update maximum length
             maxLength = Math.max(maxLength, right - left + 1);
         }
         
         System.out.println("Longest substring length: " + maxLength);
-        // Output: 3 (for "abc")
+        // Output: 3
     }
 }
 ```
 
-**Complexity:** O(n) time, O(min(m, n)) space where m is charset size
-
----
-
-### 📊 Sliding Window Patterns
-
-| Pattern | Window | Use Case | Example |
-|:--------|:------:|:---------|:--------|
-| Fixed | Constant k | Max/Min in subarray | Max sum of k elements |
-| Variable expand | Left fixed | Find longest | Longest substring |
-| Variable shrink | Right fixed | Find shortest | Min window substring |
-| Two conditions | Both move | Complex problems | Container with water |
-
----
+**Complexity:** O(n) time, O(min(m, n)) space
 
 </details>
 
 ---
 
-## ✅ Problems Covered - Day 3
+## ✅ DAY 3 - Problems Covered
 
 ### 📋 **Queue, Comparators & Advanced Techniques**
 
@@ -2926,310 +1723,1835 @@ public class VariableSlidingWindow {
 | 2 | ArrayDeque Operations | 🟢 Easy | Deque double-ended | ✅ |
 | 3 | PriorityQueue Min Heap | 🟡 Medium | Min priority ordering | ✅ |
 | 4 | PriorityQueue Max Heap | 🟡 Medium | Max priority ordering | ✅ |
-| 5 | K Largest Elements | 🟡 Medium | PriorityQueue + Logic | ✅ |
-| 6 | K Smallest Elements | 🟡 Medium | PriorityQueue reverse | ✅ |
-| 7 | Comparator - Last Digit Sort | 🟡 Medium | Custom sorting | ✅ |
-| 8 | Comparator - Even First Sort | 🟡 Medium | Comparator logic | ✅ |
-| 9 | Student Object Sorting | 🟡 Medium | Custom object sorting | ✅ |
-| 10 | Two Pointers - Opposite Direction | 🟡 Medium | Two pointers basics | ✅ |
-| 11 | Two Pointers - Same Direction | 🟡 Medium | Move elements | ✅ |
-| 12 | Two Pointers - Different Arrays | 🟡 Medium | Merge sorted arrays | ✅ |
-| 13 | Sliding Window - Fixed Size | 🟡 Medium | Max sum subarray K | ✅ |
-| 14 | Sliding Window - Variable Size | 🟡 Medium | Longest substring | ✅ |
+| 5 | Comparator - Custom Sorting | 🟡 Medium | Custom comparators | ✅ |
+| 6 | Student Object Sorting | 🟡 Medium | Custom object sorting | ✅ |
+| 7 | Two Pointers - Opposite Direction | 🟡 Medium | Two pointers basics | ✅ |
+| 8 | Two Pointers - Same Direction | 🟡 Medium | Move elements | ✅ |
+| 9 | Two Pointers - Different Arrays | 🟡 Medium | Merge sorted arrays | ✅ |
+| 10 | Sliding Window - Fixed Size | 🟡 Medium | Max sum subarray K | ✅ |
+| 11 | Sliding Window - Variable Size | 🟡 Medium | Longest substring | ✅ |
 
 ---
 
-## 🎓 Quick Reference - Day 3 Highlights
+# 📅 DAY 4: Recursion & Pattern Matching
 
-### Queue Operations Summary
+## 📚 DAY 4 - Topics
 
-```java
-// Queue (FIFO)
-Queue<Integer> q = new LinkedList<>();
-q.add(1);           // O(1) - Add to rear
-q.remove();         // O(1) - Remove from front
-q.element();        // O(1) - View front
-q.peek();           // O(1) - Safe view
+<details open>
+<summary><h3>🔤 Regular Expressions - Pattern Matching</h3></summary>
 
-// Deque (Double-ended)
-ArrayDeque<Integer> dq = new ArrayDeque<>();
-dq.offerFirst(1);   // Add to front
-dq.offerLast(2);    // Add to rear
-dq.pollFirst();     // Remove from front
-dq.pollLast();      // Remove from rear
+> **Regular Expression (RegEx)** is a pattern used to match and manipulate strings.
 
-// PriorityQueue (Heap)
-PriorityQueue<Integer> pq = new PriorityQueue<>();      // Min heap
-PriorityQueue<Integer> pq2 = new PriorityQueue<>(Comparator.reverseOrder()); // Max heap
-pq.offer(5);        // O(log n)
-pq.poll();          // O(log n) - Removes highest priority
-```
+### 1️⃣ **RegEx Metacharacters - Special Codes**
 
-### Comparator Pattern
+| Code | Matches | Example |
+|:----:|:--------|:--------|
+| `\d` | Any digit (0-9) | `\d{3}` matches "123" |
+| `\D` | Any non-digit | `\D+` matches "abc" |
+| `\w` | Word char (a-z, A-Z, 0-9, _) | `\w+` matches "hello_world" |
+| `\W` | Any non-word character | `\W+` matches "@#$" |
+| `\s` | Whitespace | `\s+` matches " " |
+| `\S` | Any non-whitespace | `\S+` matches "hello" |
+
+---
+
+### 2️⃣ **Pattern & Matcher in Java**
 
 ```java
-// Comparator syntax
-Comparator<T> cmp = (T a, T b) -> {
-    // return 1:  a > b (a comes after b)
-    // return -1: a < b (a comes before b)
-    // return 0:  a == b (equal)
-};
+import java.util.regex.Pattern;
+import java.util.regex.Matcher;
 
-Collections.sort(list, cmp);
-```
-
-### Two Pointers Pattern
-
-```java
-// Type 1: Opposite ends
-int left = 0, right = arr.length - 1;
-while (left < right) {
-    // Process
-    left++;
-    right--;
-}
-
-// Type 2: Same direction
-int i = 0, j = 0;
-while (i < arr.length) {
-    if (condition) {
-        // Process
-        j++;
-    }
-    i++;
-}
-
-// Type 3: Different arrays
-int p1 = 0, p2 = 0;
-while (p1 < arr1.length && p2 < arr2.length) {
-    if (arr1[p1] < arr2[p2]) {
-        // Use arr1[p1]
-        p1++;
-    } else {
-        // Use arr2[p2]
-        p2++;
+public class RegExDemo {
+    public static void main(String[] args) {
+        Pattern pattern = Pattern.compile("[A-Za-z]+");
+        Matcher matcher = pattern.matcher("Subscribe");
+        
+        boolean result = matcher.matches();
+        System.out.println(result);  // true
     }
 }
 ```
 
-### Sliding Window Pattern
+**Matcher Methods:**
+```java
+// matches() - Entire string must match
+matcher.matches()  // true/false
+
+// find() - Find pattern occurrence
+while(matcher.find()) {
+    System.out.println(matcher.group());
+}
+
+// group() - Get matched text
+matcher.group()
+```
+
+---
+
+### 3️⃣ **Real-World RegEx Examples**
+
+#### 📧 Email Validation
 
 ```java
-// Fixed window (size k)
-int windowSum = 0;
-for (int i = 0; i < k; i++) {
-    windowSum += arr[i];
-}
-int maxSum = windowSum;
+Pattern emailPattern = Pattern.compile(
+    "[a-zA-z0-9]+[.-]?[a-z0-9]+[-]?[a-z]*@{1}[a-z]+-?[a-z]*[.][a-z]+"
+);
 
-for (int i = k; i < arr.length; i++) {
-    windowSum += arr[i] - arr[i - k];
-    maxSum = Math.max(maxSum, windowSum);
-}
+String email = "ShivamRBansal@gmail.com";
+Matcher mat = emailPattern.matcher(email);
+System.out.println(mat.matches());  // true
+```
 
-// Variable window
-Set<Character> window = new HashSet<>();
-int left = 0;
-for (int right = 0; right < arr.length; right++) {
-    while (window.contains(arr[right])) {
-        window.remove(arr[left++]);
+</details>
+
+---
+
+<details open>
+<summary><h3>🔀 Recursion Fundamentals</h3></summary>
+
+> **Recursion** is a programming technique where a function calls itself directly or indirectly.
+
+### 1️⃣ **Recursion Basics - Key Concepts**
+
+#### Components of Recursion
+
+1. **Base Case:** Condition that stops recursion
+2. **Recursive Case:** Function calls itself with modified parameters
+3. **Call Stack:** Stores function calls in memory
+
+#### 📚 Example: Print Numbers 1 to N
+
+```java
+public class RecursionBasics {
+    
+    public static void print1ToN(int i, int n) {
+        if (i == n + 1)
+            return;
+        
+        System.out.println(i);
+        print1ToN(i + 1, n);
     }
-    window.add(arr[right]);
-    // Process window [left, right]
+    
+    public static void main(String[] args) {
+        print1ToN(1, 10);
+        // Output: 1 2 3 4 5 6 7 8 9 10
+    }
 }
 ```
 
 ---
 
-## ✨ Day 3 Key Takeaways
+### 2️⃣ **Factorial - n!**
 
-### 🎯 What You Learned
+**Definition:** n! = n × (n-1) × (n-2) × ... × 1
 
-1. **Queue Types** - Linear (LinkedList), Double-ended (ArrayDeque), Priority (PriorityQueue)
-2. **Comparators** - Custom sorting with anonymous classes and lambda expressions
-3. **Two Pointers** - Three main types for different problem scenarios
-4. **Sliding Window** - Fixed and variable size windows for efficient processing
-5. **Problem Patterns** - K largest/smallest, max sum subarray, substring problems
-
-### 💡 Important Insights
-
-- **PriorityQueue** is O(log n) not O(1), but peek() is O(1)
-- **Comparators** return 1/-1/0, not true/false
-- **Two pointers** reduces nested loops from O(n²) to O(n)
-- **Sliding window** is optimal for contiguous subarray problems
-- **Fixed window** is simpler; variable window needs careful boundary handling
-
-### 🚀 Optimization Techniques
-
-| Problem | Brute Force | Optimized | Improvement |
-|:--------|:-----------:|:---------:|:-----------:|
-| Max sum K | O(n·k) | O(n) | Sliding window |
-| K largest | O(n log n) | O(n log k) | PriorityQueue |
-| Remove duplicates | O(n²) | O(n) | Two pointers |
-| Merge sorted | O(n log n) | O(n) | Two pointers |
+```java
+public class Factorial {
+    
+    public static int fact(int n) {
+        if (n == 1 || n == 0) {
+            return 1;
+        }
+        
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        System.out.println("5! = " + fact(5));   // 120
+        System.out.println("10! = " + fact(10)); // 3628800
+    }
+}
+```
 
 ---
 
-## 💻 Code Structure Best Practices
+### 3️⃣ **Permutation & Combination**
+
+#### Permutation - P(n, r) = n! / (n-r)!
 
 ```java
-// Import everything from collections
+public class Permutation {
+    
+    public static int fact(int n) {
+        if (n == 1 || n == 0) return 1;
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5, r = 3;
+        int perm = fact(n) / fact(n - r);
+        System.out.println("P(" + n + "," + r + ") = " + perm);
+        // Output: P(5,3) = 60
+    }
+}
+```
+
+#### Combination - C(n, r) = n! / (r! × (n-r)!)
+
+```java
+public class Combination {
+    
+    public static int fact(int n) {
+        if (n == 1 || n == 0) return 1;
+        return n * fact(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5, r = 3;
+        int comb = fact(n) / (fact(r) * fact(n - r));
+        System.out.println("C(" + n + "," + r + ") = " + comb);
+        // Output: C(5,3) = 10
+    }
+}
+```
+
+---
+
+### 4️⃣ **Sum of N Natural Numbers**
+
+```java
+public class SumOfN {
+    
+    public static int sumOfN(int n) {
+        if (n == 0) return 0;
+        return n + sumOfN(n - 1);
+    }
+    
+    public static void main(String[] args) {
+        int n = 5;
+        int result = sumOfN(n);
+        System.out.println("Sum = " + result);  // 15
+    }
+}
+```
+
+---
+
+</details>
+
+---
+
+<details open>
+<summary><h3>⚡ Quick Sort - Recursive Implementation</h3></summary>
+
+> **Quick Sort** is a divide-and-conquer sorting algorithm.
+
+```java
+import java.util.ArrayList;
+import java.util.Arrays;
+
+public class QuickSort {
+    
+    public static ArrayList<Integer> quickSort(ArrayList<Integer> arr) {
+        if (arr.size() <= 1) {
+            return arr;
+        }
+        
+        int pivot = arr.get(0);
+        ArrayList<Integer> small = new ArrayList<>();
+        ArrayList<Integer> big = new ArrayList<>();
+        
+        for (int i = 1; i < arr.size(); i++) {
+            if (arr.get(i) > pivot) {
+                big.add(arr.get(i));
+            } else {
+                small.add(arr.get(i));
+            }
+        }
+        
+        ArrayList<Integer> result = new ArrayList<>();
+        result.addAll(quickSort(big));
+        result.add(pivot);
+        result.addAll(quickSort(small));
+        
+        return result;
+    }
+    
+    public static void main(String[] args) {
+        ArrayList<Integer> arr = new ArrayList<>(
+            Arrays.asList(45, 13, 44, 99, 98, 1, 47)
+        );
+        
+        ArrayList<Integer> sorted = quickSort(arr);
+        System.out.println("Sorted: " + sorted);
+        // Output: [99, 98, 47, 45, 44, 13, 1]
+    }
+}
+```
+
+**Complexity:** O(n log n) average, O(n²) worst case
+
+</details>
+
+---
+
+## ✅ DAY 4 - Problems Covered
+
+### 📋 **Recursion & Pattern Matching**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Regular Expressions | 🟢 Easy | Pattern matching | ✅ |
+| 2 | Email Validation | 🟡 Medium | RegEx application | ✅ |
+| 3 | Recursion Basics | 🟢 Easy | Base case & recursion | ✅ |
+| 4 | Factorial | 🟡 Medium | Recursive calculation | ✅ |
+| 5 | Permutation | 🟡 Medium | P(n,r) formula | ✅ |
+| 6 | Combination | 🟡 Medium | C(n,r) formula | ✅ |
+| 7 | Sum of N Numbers | 🟡 Medium | Recursive summation | ✅ |
+| 8 | Quick Sort | 🟡 Medium | Divide & conquer | ✅ |
+
+---
+
+# 📅 DAY 5: Backtracking, Recursion & LinkedList
+
+## 📚 DAY 5 - Topics
+
+<details open>
+<summary><h3>🎯 Backtracking Concepts</h3></summary>
+
+> **Backtracking** is a problem-solving technique that explores all possibilities, removing invalid solutions.
+
+### 1️⃣ **What is Backtracking?**
+
+**Key Components:**
+1. **Choice:** At each step, explore all choices
+2. **Constraints:** Check if current choice is valid
+3. **Goal:** Reach the desired final state
+4. **Backtrack:** If path doesn't lead to solution, undo and try another
+
+**When to Use:**
+- ✅ N Queens Problem
+- ✅ Sudoku Solver
+- ✅ Maze Solving
+- ✅ Permutations/Combinations
+- ✅ Graph Coloring
+
+---
+
+### 2️⃣ **N Queens Problem - Concept Explanation**
+
+**Problem Statement:** Place N queens on an N×N chessboard such that no two queens attack each other.
+
+**Constraints:**
+- ✅ No two queens on same row
+- ✅ No two queens on same column
+- ✅ No two queens on same diagonal
+
+**Example: 4 Queens Solution**
+
+```
+. Q . .
+. . . Q
+Q . . .
+. . Q .
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔀 Recursion Problem: Count Total Paths in Maze</h3></summary>
+
+> **Problem:** Find total number of unique paths in an n×m grid moving only right or down.
+
+```java
+public class Day5 {
+    public static int countMaze(int i, int j, int n, int m) {
+        if (i == n || j == m) 
+            return 0;
+        
+        if (i == n - 1 && j == m - 1) 
+            return 1;
+        
+        int downPath = countMaze(i + 1, j, n, m);
+        int rightPath = countMaze(i, j + 1, n, m);
+        
+        return downPath + rightPath;
+    }
+    
+    public static void main(String[] args) {
+        int n = 3, m = 3;
+        int res = countMaze(0, 0, n, m);
+        System.out.println("Total Paths = " + res);
+        // Output: Total Paths = 6
+    }
+}
+```
+
+**Complexity:** O(2^(n+m)) time, O(n + m) space
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔗 LinkedList - Complete Implementation Guide</h3></summary>
+
+> **LinkedList** is a linear data structure where elements are stored in nodes with references to next node(s).
+
+### 1️⃣ **Singly LinkedList - Basic Operations**
+
+```java
+class Node {
+    int val;
+    Node next;
+    
+    Node(int value) {
+        this.val = value;
+        this.next = null;
+    }
+}
+
+public class SinglyLinkedList {
+    
+    public void prepend(Node head, int val) {
+        Node newNode = new Node(val);
+        newNode.next = head;
+        head = newNode;
+    }
+    
+    public void append(Node head, int val) {
+        Node newNode = new Node(val);
+        Node temp = head;
+        while (temp.next != null) temp = temp.next;
+        temp.next = newNode;
+    }
+    
+    public void deleteByValue(Node head, int val) {
+        if (head == null) return;
+        if (head.val == val) { head = head.next; return; }
+        
+        Node temp = head;
+        while (temp.next != null && temp.next.val != val) temp = temp.next;
+        if (temp.next != null) {
+            temp.next = temp.next.next;
+        }
+    }
+}
+```
+
+---
+
+### 2️⃣ **Doubly LinkedList**
+
+```java
+class DoublyNode {
+    int val;
+    DoublyNode next;
+    DoublyNode prev;
+    
+    DoublyNode(int value) {
+        this.val = value;
+        this.next = null;
+        this.prev = null;
+    }
+}
+```
+
+**Operations:** Similar to Singly LL but with bidirectional traversal.
+
+---
+
+### 3️⃣ **Circular Doubly LinkedList**
+
+In circular lists, the last node's next points back to the first node, and the first node's prev points to the last node.
+
+```
+1 ↔ 2 ↔ 3
+↑         ↓
+└─────────┘
+```
+
+</details>
+
+---
+
+## ✅ DAY 5 - Problems Covered
+
+### 📋 **Backtracking, Recursion & LinkedList**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Backtracking Concepts | 🟡 Medium | N Queens explanation | ✅ |
+| 2 | Count Total Paths | 🟡 Medium | Maze recursion | ✅ |
+| 3 | Singly LinkedList | 🟡 Medium | Creation, traversal, insert, delete | ✅ |
+| 4 | Doubly LinkedList | 🟡 Medium | Bidirectional operations | ✅ |
+| 5 | Circular Doubly LL | 🟠 Hard | Circular references | ✅ |
+
+---
+
+# 📅 DAY 6: Stack Implementation
+
+## 📚 DAY 6 - Topics
+
+<details open>
+<summary><h3>🥞 Stack Fundamentals - LIFO Data Structure</h3></summary>
+
+> **Stack** is a Last-In-First-Out (LIFO) data structure where elements are added and removed from the same end (top).
+
+### 1️⃣ **Array-based Stack Implementation**
+
+```java
+public class ArrayStack {
+    private int[] arr;
+    private int top = -1;
+    
+    public ArrayStack(int size) {
+        arr = new int[size];
+    }
+    
+    public void push(int val) {
+        if (top == arr.length - 1) {
+            System.out.println("Stack Overflow!");
+            return;
+        }
+        arr[++top] = val;
+    }
+    
+    public int pop() {
+        if (top == -1) {
+            System.out.println("Stack Underflow!");
+            return -1;
+        }
+        return arr[top--];
+    }
+    
+    public int peek() {
+        return (top == -1) ? -1 : arr[top];
+    }
+    
+    public boolean isEmpty() {
+        return top == -1;
+    }
+}
+```
+
+---
+
+### 2️⃣ **ArrayList-based Stack Implementation**
+
+```java
 import java.util.*;
-import java.util.regex.*;
 
-// Queue operations
-Queue<T> q = new LinkedList<>();
-q.add(element);
-q.remove();
-q.peek();
-
-// Priority-based processing
-PriorityQueue<T> pq = new PriorityQueue<>();
-// or
-PriorityQueue<T> pq = new PriorityQueue<>(Comparator.reverseOrder());
-
-// Custom sorting
-Comparator<T> cmp = (T a, T b) -> {
-    // Comparison logic
-    return result; // 1, -1, or 0
-};
-Collections.sort(list, cmp);
-
-// Sliding window
-for (int right = 0; right < arr.length; right++) {
-    // Add element
-    while (invalidWindow) {
-        // Remove element
-        left++;
+public class ArrayListStack {
+    private ArrayList<Integer> arr = new ArrayList<>();
+    
+    public void push(int val) {
+        arr.add(val);
     }
-    // Process valid window [left, right]
+    
+    public int pop() {
+        return arr.isEmpty() ? -1 : arr.remove(arr.size() - 1);
+    }
+    
+    public int peek() {
+        return arr.isEmpty() ? -1 : arr.get(arr.size() - 1);
+    }
+    
+    public boolean isEmpty() {
+        return arr.isEmpty();
+    }
 }
 ```
 
 ---
 
-## 🏆 Performance Comparison
+### 3️⃣ **Using Java Collections Stack**
 
-### PriorityQueue vs HashMap vs TreeMap
+```java
+import java.util.Stack;
 
-```
-Operation         PriorityQueue    HashMap    TreeMap
-Insert           O(log n)         O(1)       O(log n)
-Remove min/max   O(log n)         —          O(log n)
-Search           O(n)             O(1)       O(log n)
-Memory           O(n)             O(n)       O(n)
-Ordered          By priority      No         By key
-```
-
-### Two Pointers vs Brute Force
-
-```
-Problem          Brute Force      Two Pointers    Improvement
-Pair sum         O(n²)            O(n)            2 pointers opposite
-Move elements    O(n²)            O(n)            2 pointers same direction
-Merge sorted     O(n log n)       O(n)            2 pointers both arrays
-Partition        O(n²)            O(n)            2 pointers opposite
+public class CollectionsStack {
+    public static void main(String[] args) {
+        Stack<Integer> stack = new Stack<>();
+        
+        stack.push(10);
+        stack.push(20);
+        stack.push(30);
+        
+        System.out.println("Peek: " + stack.peek());  // 30
+        System.out.println("Popped: " + stack.pop()); // 30
+        System.out.println("Size: " + stack.size());  // 2
+    }
+}
 ```
 
-
-## 🎓 Resources & References
-
-<table>
-<tr>
-<td>
-
-### 📚 Documentation
-- [Java Collections](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/Collections.html)
-- [ArrayList Docs](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/ArrayList.html)
-- [List Interface](https://docs.oracle.com/en/java/javase/17/docs/api/java.base/java/util/List.html)
-
-</td>
-<td>
-
-### 🛠️ Practice Platforms
-- [LeetCode](https://leetcode.com/) - Problem solving
-- [HackerRank](https://www.hackerrank.com/) - Java practice
-- [GeeksforGeeks](https://www.geeksforgeeks.org/) - Tutorials
-
-</td>
-</tr>
-</table>
+</details>
 
 ---
 
-## 🤝 Questions & Solutions
+<details open>
+<summary><h3>✅ Valid Parentheses Problem - Using Stack</h3></summary>
 
-### Q1: When should I use ArrayList over Array?
-**A:** Use ArrayList when:
-- Size is not known beforehand
-- Frequent insertions/deletions needed
-- Need dynamic growth
-- Flexibility is more important than performance
+> **Problem:** Check if a string with parentheses, brackets, and braces is valid.
 
-Use Array when:
-- Size is fixed and known
-- Maximum performance needed
-- Working with primitives extensively
-- Memory constraints
+```java
+import java.util.Stack;
+
+public class ValidParentheses {
+    
+    public static boolean isValid(String s) {
+        Stack<Character> stack = new Stack<>();
+        
+        for (char ch : s.toCharArray()) {
+            if (ch == '(' || ch == '[' || ch == '{') {
+                stack.push(ch);
+            } else {
+                if (stack.isEmpty()) {
+                    return false;
+                }
+                
+                char top = stack.pop();
+                
+                if ((ch == ')' && top != '(') ||
+                    (ch == ']' && top != '[') ||
+                    (ch == '}' && top != '{')) {
+                    return false;
+                }
+            }
+        }
+        
+        return stack.isEmpty();
+    }
+    
+    public static void main(String[] args) {
+        System.out.println(isValid("()"));       // true
+        System.out.println(isValid("([{}])"));   // true
+        System.out.println(isValid("(]"));       // false
+    }
+}
+```
+
+**Complexity:** O(n) time, O(n) space
+
+</details>
+
+---
+
+## ✅ DAY 6 - Problems Covered
+
+### 📋 **Stack Implementation**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Stack Array Implementation | 🟡 Medium | Fixed capacity | ✅ |
+| 2 | Stack ArrayList Implementation | 🟡 Medium | Dynamic sizing | ✅ |
+| 3 | Stack Collections Framework | 🟢 Easy | Built-in Stack class | ✅ |
+| 4 | Valid Parentheses Problem | 🟡 Medium | Stack matching | ✅ |
 
 ---
 
-### Q2: Why does the Two Pointers approach work for Move Zeroes?
-**A:** Because:
-- We maintain pointer j for next non-zero position
-- When we find a non-zero at i, we swap it to position j
-- This puts all non-zeros before all zeros in a single pass
-- Time: O(n), Space: O(1) - optimal solution!
+# 📅 DAY 7: Prefix, Infix, Postfix & Queue
+
+## 📚 DAY 7 - Topics
+
+<details open>
+<summary><h3>🔤 Prefix, Infix, Postfix Notation</h3></summary>
+
+> **Notation** refers to the order in which operators and operands are written in an expression.
+
+### 1️⃣ **Infix Notation (Standard)**
+
+**Format:** Operand Operator Operand
+
+```
+2 + 3
+5 * 4
+(2 + 3) * 4
+```
+
+**Characteristics:**
+- ✅ Easy to read for humans
+- ✅ Requires parentheses for precedence
+- ❌ Complex for computer processing
 
 ---
 
-### Q3: Why is HashSet better than nested loops for duplicates?
-**A:** 
-- HashSet lookup: O(1) average
-- Brute force: checks each element against all others → O(n²)
-- Trade-off: HashSet uses O(n) extra space
-- For most cases, HashSet is worth the trade-off
+### 2️⃣ **Postfix Notation (Reverse Polish Notation - RPN)**
+
+**Format:** Operand Operand Operator
+
+```
+2 3 +           (equivalent to 2 + 3)
+5 4 *           (equivalent to 5 * 4)
+2 3 + 4 *       (equivalent to (2 + 3) * 4)
+```
+
+#### Evaluating Postfix using Stack
+
+```java
+public class PostfixEvaluation {
+    
+    public static int evaluatePostfix(String[] postfix) {
+        Stack<Integer> stack = new Stack<>();
+        
+        for (String token : postfix) {
+            if (token.matches("\\d+")) {
+                stack.push(Integer.parseInt(token));
+            } else {
+                int b = stack.pop();
+                int a = stack.pop();
+                int result = 0;
+                
+                switch (token) {
+                    case "+": result = a + b; break;
+                    case "-": result = a - b; break;
+                    case "*": result = a * b; break;
+                    case "/": result = a / b; break;
+                }
+                stack.push(result);
+            }
+        }
+        
+        return stack.peek();
+    }
+    
+    public static void main(String[] args) {
+        String[] postfix = {"2", "3", "4", "+", "*"};
+        System.out.println(evaluatePostfix(postfix));  // 14
+    }
+}
+```
 
 ---
 
-## ✅ Problems Covered - Day 4
+### 3️⃣ **Prefix Notation (Polish Notation)**
 
-### 📋 **Regular Expressions & Recursion**
+**Format:** Operator Operand Operand
 
-| # | Problem | Difficulty | Concept | Status | Description |
-|:-:|:--------|:----------:|:--------|:------:|:-----|
-| 1 | Regex Pattern Basics | 🟢 Easy | Pattern Matching | ✅ | Compile patterns, use matches() with character classes |
-| 2 | Email Validation | 🟡 Medium | Regex Patterns | ✅ | Validate emails using regex with quantifiers and character classes |
-| 3 | Character Classes & Quantifiers | 🟡 Medium | RegEx Syntax | ✅ | Use [A-Z], \d, \w, {n}, +, *, ? in patterns |
-| 4 | Print 1 to N | 🟢 Easy | Basic Recursion | ✅ | Recursive function with base case to print numbers in ascending order |
-| 5 | Print N to 1 | 🟢 Easy | Recursion Order | ✅ | Reverse order printing using recursion (call before print vs after) |
-| 6 | Sum of N Natural Numbers | 🟡 Medium | Accumulator Pattern | ✅ | Calculate sum using accumulator parameter or return value approach |
-| 7 | Factorial | 🟡 Medium | Recursion Basics | ✅ | Implement n! = n × (n-1)! with base case at 0 or 1 |
-| 8 | Permutation P(n,r) | 🟠 Hard | Combinatorics | ✅ | Calculate arrangements using P(n,r) = n!/(n-r)! formula |
-| 9 | Combination C(n,r) | 🟠 Hard | Combinatorics | ✅ | Calculate selections using C(n,r) = n!/(r!(n-r)!) formula |
-| 10 | Quick Sort | 🟠 Hard | Recursive Sorting | ✅ | Divide-and-conquer: partition around pivot and recursively sort |
+```
++ 2 3           (equivalent to 2 + 3)
+* 5 4           (equivalent to 5 * 4)
+* + 2 3 4       (equivalent to (2 + 3) * 4)
+```
 
-### 📝 Key Learnings from Day 4
-
-**Regular Expressions:**
-- Used Pattern.compile() to create compiled regex patterns
-- Tested with `matches()` for exact string match, `find()` for substring search
-- Applied to real-world validation: emails, phone numbers, URLs
-- Practiced with data files: emails.txt, urls.txt, phone numbers in data.txt
-
-**Recursion Fundamentals:**
-- Every recursion needs a **base case** to prevent infinite calls
-- **Call stack** visualization helps understand function execution order
-- Two approaches: tail recursion (accumulator) vs return value recursion
-- Performed dry runs on paper for 1-N, N-1, and sum problems
-
-**Advanced Recursion:**
-- Used factorial as foundation for permutation and combination
-- Understood combinatorics: P(n,r) with order, C(n,r) without order
-- Implemented Quick Sort using divide-and-conquer recursion
-- Analyzed time complexity: O(n log n) average, O(n²) worst case
+</details>
 
 ---
+
+<details open>
+<summary><h3>📬 Queue Implementations</h3></summary>
+
+> **Queue** is a FIFO (First-In-First-Out) data structure.
+
+### 1️⃣ **Queue using LinkedList**
+
+```java
+import java.util.LinkedList;
+
+public class QueueLinkedList {
+    
+    LinkedList<Integer> queue = new LinkedList<>();
+    
+    public void enqueue(int value) {
+        queue.add(value);
+    }
+    
+    public int dequeue() {
+        return queue.isEmpty() ? -1 : queue.remove();
+    }
+    
+    public int peek() {
+        return queue.isEmpty() ? -1 : queue.getFirst();
+    }
+}
+```
+
+---
+
+### 2️⃣ **Circular Queue**
+
+```java
+public class CircularQueue {
+    
+    private int[] queue;
+    private int front = -1;
+    private int rear = -1;
+    
+    public CircularQueue(int capacity) {
+        this.queue = new int[capacity];
+    }
+    
+    public void enqueue(int value) {
+        if (isFull()) {
+            System.out.println("Queue is full!");
+            return;
+        }
+        if (front == -1) front = 0;
+        rear = (rear + 1) % queue.length;
+        queue[rear] = value;
+    }
+    
+    public int dequeue() {
+        if (isEmpty()) return -1;
+        int value = queue[front];
+        if (front == rear) {
+            front = -1;
+            rear = -1;
+        } else {
+            front = (front + 1) % queue.length;
+        }
+        return value;
+    }
+    
+    public boolean isEmpty() {
+        return front == -1;
+    }
+    
+    public boolean isFull() {
+        return (rear + 1) % queue.length == front;
+    }
+}
+```
+
+</details>
+
+---
+
+## ✅ DAY 7 - Problems Covered
+
+### 📋 **Notation & Queue Problems**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Infix to Postfix Conversion | 🟡 Medium | Stack + Operator precedence | ✅ |
+| 2 | Postfix Expression Evaluation | 🟡 Medium | Stack operations | ✅ |
+| 3 | Queue LinkedList Implementation | 🟡 Medium | Linked structure | ✅ |
+| 4 | Circular Queue Implementation | 🟡 Medium | Circular logic | ✅ |
+
+---
+
+# 📅 DAY 8: Binary Trees
+
+## 📚 DAY 8 - Topics
+
+<details open>
+<summary><h3>🌳 Binary Tree Concepts & Types</h3></summary>
+
+> **Binary Tree** is a hierarchical data structure where each node has **at most 2 children** (left and right).
+
+### 1️⃣ **Binary Tree Terminology**
+
+```
+         1          ← Root Node
+        / \
+       2   3        ← Children of 1
+      / \
+     4   5          ← Children of 2
+```
+
+---
+
+### 2️⃣ **Binary Tree Types**
+
+- **Full BT:** Every node has 0 or 2 children
+- **Complete BT:** All levels filled except possibly the last
+- **Perfect BT:** All levels completely filled
+- **Balanced BT:** Height difference ≤ 1
+- **Skewed BT:** All nodes have at most 1 child
+
+</details>
+
+---
+
+<details open>
+<summary><h3>↔️ Tree Traversal Methods</h3></summary>
+
+### 1️⃣ **PreOrder Traversal (Root, Left, Right)**
+
+```java
+public void preOrder(Node root) {
+    if (root == null) return;
+    System.out.print(root.data + " ");
+    preOrder(root.left);
+    preOrder(root.right);
+}
+```
+
+Example: [1, 2, 4, 5, 3]
+
+---
+
+### 2️⃣ **InOrder Traversal (Left, Root, Right)**
+
+```java
+public void inOrder(Node root) {
+    if (root == null) return;
+    inOrder(root.left);
+    System.out.print(root.data + " ");
+    inOrder(root.right);
+}
+```
+
+Example: [4, 2, 5, 1, 3]
+
+---
+
+### 3️⃣ **PostOrder Traversal (Left, Right, Root)**
+
+```java
+public void postOrder(Node root) {
+    if (root == null) return;
+    postOrder(root.left);
+    postOrder(root.right);
+    System.out.print(root.data + " ");
+}
+```
+
+Example: [4, 5, 2, 3, 1]
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📈 Tree Operations</h3></summary>
+
+### 1️⃣ **Height of Binary Tree**
+
+```java
+public int treeHeight(Node root) {
+    if (root == null) return 0;
+    
+    int leftHeight = treeHeight(root.left);
+    int rightHeight = treeHeight(root.right);
+    
+    return Math.max(leftHeight, rightHeight) + 1;
+}
+```
+
+**Complexity:** O(n) time, O(h) space
+
+---
+
+### 2️⃣ **Sum of All Nodes**
+
+```java
+public int sumOfNodes(Node root) {
+    if (root == null) return 0;
+    
+    int leftSum = sumOfNodes(root.left);
+    int rightSum = sumOfNodes(root.right);
+    
+    return root.data + leftSum + rightSum;
+}
+```
+
+</details>
+
+---
+
+## ✅ DAY 8 - Problems Covered
+
+### 📋 **Binary Tree Problems**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Binary Tree Creation | 🟡 Medium | Array to tree conversion | ✅ |
+| 2 | PreOrder Traversal | 🟢 Easy | DFS - Node first | ✅ |
+| 3 | InOrder Traversal | 🟢 Easy | DFS - Node middle | ✅ |
+| 4 | PostOrder Traversal | 🟢 Easy | DFS - Node last | ✅ |
+| 5 | Height of Binary Tree | 🟡 Medium | Recursive calculation | ✅ |
+| 6 | Sum of All Nodes | 🟡 Medium | Tree aggregation | ✅ |
+
+---
+
+# 📅 DAY 9: Binary Search Tree
+
+## 📚 DAY 9 - Topics
+
+<details open>
+<summary><h3>🌳 Binary Search Tree (BST) - Complete Implementation</h3></summary>
+
+> **Binary Search Tree (BST)** is a binary tree where:
+> - Left subtree values < parent value
+> - Right subtree values > parent value
+> - All nodes follow BST property recursively
+
+### 1️⃣ **Node Structure**
+
+```java
+public static class Node {
+    int data;
+    Node left;
+    Node right;
+    
+    Node(int data) {
+        this.data = data;
+    }
+}
+```
+
+---
+
+### 2️⃣ **BST Insertion**
+
+Insert elements while maintaining BST property.
+
+```java
+public Node insert(Node root, int val) {
+    if (root == null) {
+        return new Node(val);
+    }
+    
+    if (val < root.data) {
+        root.left = insert(root.left, val);
+    } else {
+        root.right = insert(root.right, val);
+    }
+    
+    return root;
+}
+```
+
+**Example:** Insert [3, 1, 5, 6, 2, 8]
+
+```
+        3
+       / \
+      1   5
+       \ / \
+        2 6  8
+```
+
+---
+
+### 3️⃣ **InOrder Traversal (Gives Sorted Output)**
+
+```java
+public void inOrder(Node root) {
+    if (root == null) {
+        return;
+    }
+    
+    inOrder(root.left);
+    System.out.print(root.data + " ");
+    inOrder(root.right);
+}
+```
+
+**Output for example tree:** 1 2 3 5 6 8 (Sorted!) ✅
+
+---
+
+### 4️⃣ **BST Search Operation**
+
+Find if a key exists in BST in O(log n) average time.
+
+```java
+public boolean searchKey(Node root, int key) {
+    if (root == null) {
+        return false;
+    }
+    
+    if (key > root.data) {
+        return searchKey(root.right, key);
+    } else if (key < root.data) {
+        return searchKey(root.left, key);
+    } else {
+        return true;  // key == root.data
+    }
+}
+```
+
+**Example:** Searching for key = 5 in tree
+
+```
+search(3, 5): 5 > 3 → go right
+search(5, 5): 5 == 5 → Found! ✅
+```
+
+**Complexity:** O(log n) average, O(n) worst case
+
+---
+
+### 5️⃣ **BST Deletion - All Cases**
+
+Delete a node while maintaining BST property. Three cases:
+
+#### Case 1: Node with 0 children (Leaf Node)
+Simply remove the node.
+
+```
+Delete 2:
+        3              3
+       / \    →       / \
+      1   5          1   5
+       \ / \              / \
+        2 6  8            6   8
+```
+
+---
+
+#### Case 2: Node with 1 child
+Replace node with its child.
+
+```
+Delete 1:
+        3              3
+       / \    →       / \
+      1   5          2   5
+       \ / \            / \
+        2 6  8         6   8
+```
+
+---
+
+#### Case 3: Node with 2 children
+Replace node with InOrder Successor and delete successor.
+
+**InOrder Successor:** Smallest node in right subtree (leftmost node in right subtree)
+
+```java
+public Node inOrderSuccessor(Node root) {
+    while(root.left != null) {
+        root = root.left;
+    }
+    return root;
+}
+```
+
+Example: Delete node 3 (which has 2 children)
+
+```
+Deletion Steps:
+1. Find InOrder Successor: smallest in right subtree = 5
+2. Replace 3's data with 5
+3. Delete 5 from right subtree
+
+        3              3              5
+       / \            / \            / \
+      1   5    →     1   5    →     1   6
+       \ / \         \   / \        \    \
+        2 6  8        2 6  8         2    8
+```
+
+#### Complete Deletion Implementation
+
+```java
+public Node deleteNode(Node root, int val) {
+    if (val > root.data) {
+        root.right = deleteNode(root.right, val);
+    } else if (val < root.data) {
+        root.left = deleteNode(root.left, val);
+    } else {
+        // Node to delete found
+        
+        // Case 0: No children
+        if(root.left == null && root.right == null)
+            return null;
+        
+        // Case 1: One child - Left child
+        if(root.left == null) {
+            return root.right;
+        }
+        
+        // Case 1: One child - Right child
+        if(root.right == null) {
+            return root.left;
+        }
+        
+        // Case 2: Two children
+        Node IOS = inOrderSuccessor(root.right);
+        root.data = IOS.data;
+        root.right = deleteNode(root.right, IOS.data);
+    }
+    return root;
+}
+```
+
+---
+
+### 6️⃣ **Complete Day 9 Implementation**
+
+```java
+public class Day9BST {
+
+    public static class Node {
+        int data;
+        Node left;
+        Node right;
+
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
+    public Node insert(Node root, int val) {
+        if (root == null) {
+            return new Node(val);
+        }
+
+        if (val < root.data) {
+            root.left = insert(root.left, val);
+        } else {
+            root.right = insert(root.right, val);
+        }
+
+        return root;
+    }
+
+    public void inOrder(Node root) {
+        if (root == null) {
+            return;
+        }
+
+        inOrder(root.left);
+        System.out.print(root.data + " ");
+        inOrder(root.right);
+    }
+
+    public boolean searchKey(Node root, int key) {
+        if (root == null) {
+            return false;
+        }
+
+        if (key > root.data) {
+           return searchKey(root.right, key);
+        } else if (key < root.data) {
+            return searchKey(root.left, key);
+        } else {
+            return true;
+        }
+    }
+
+    public Node deleteNode(Node root, int val) {
+        if(val > root.data) {
+            root.right = deleteNode(root.right, val);
+        } else if (val < root.data) {
+            root.left = deleteNode(root.left, val);
+        } else {
+            // 0 child
+            if(root.left == null && root.right == null)
+                return null;
+
+            // 1 child
+            if(root.left == null) {
+                return root.right;
+            } else if(root.right == null) {
+                return root.left;
+            }
+
+            // 2 Children
+            Node IOS = inOrderSuccessor(root.right);
+            root.data = IOS.data;
+            root.right = deleteNode(root.right, IOS.data);
+        }
+        return root;
+    }
+
+    public Node inOrderSuccessor(Node root) {
+        while(root.left != null) {
+            root = root.left;
+        }
+        return root;
+    }
+
+    public static void main(String[] args) {
+        Day9BST bst = new Day9BST();
+
+        int[] nodes = {3, 1, 5, 6, 2, 8};
+
+        Node root = null;
+
+        for (int i = 0; i < nodes.length; i++) {
+            root = bst.insert(root, nodes[i]);
+        }
+
+        System.out.print("InOrder Traversal: ");
+        bst.inOrder(root);
+        System.out.println();
+
+        System.out.print("Search 5: ");
+        System.out.println(bst.searchKey(root, 5) ? "Found" : "Not Found");
+
+        System.out.print("Search 500: ");
+        System.out.println(bst.searchKey(root, 500) ? "Found" : "Not Found");
+
+        System.out.print("InOrder after deleting 3: ");
+        root = bst.deleteNode(root, 3);
+        bst.inOrder(root);
+        System.out.println();
+    }
+}
+```
+
+**Output:**
+```
+InOrder Traversal: 1 2 3 5 6 8
+Search 5: Found
+Search 500: Not Found
+InOrder after deleting 3: 1 2 5 6 8
+```
+
+</details>
+
+---
+
+## ✅ DAY 9 - Problems Covered
+
+### 📋 **Binary Search Tree**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | BST Node Structure | 🟢 Easy | Node definition | ✅ |
+| 2 | BST Insertion | 🟡 Medium | Maintain BST property | ✅ |
+| 3 | BST Search | 🟡 Medium | Binary search O(log n) | ✅ |
+| 4 | InOrder Traversal | 🟢 Easy | Sorted output | ✅ |
+| 5 | BST Deletion - 0 Children | 🟡 Medium | Remove leaf node | ✅ |
+| 6 | BST Deletion - 1 Child | 🟡 Medium | Replace with child | ✅ |
+| 7 | BST Deletion - 2 Children | 🟠 Hard | InOrder successor method | ✅ |
+| 8 | Complete BST Implementation | 🟠 Hard | All operations combined | ✅ |
+
+---
+
+# 📅 DAY 10: Graphs & Dynamic Programming
+
+## 📚 DAY 10 - Topics
+
+<details open>
+<summary><h3>📚 Graph Basics & Terminology</h3></summary>
+
+> **Graph** is a collection of nodes (vertices) connected by edges. It's a non-linear data structure.
+
+### 1️⃣ **Graph Terminology**
+
+```
+     1 ──── 2
+     │      │
+     3 ──── 4
+
+- Vertex (Node): Data point (1, 2, 3, 4)
+- Edge: Connection between two vertices (1-2, 1-3, etc.)
+- Adjacent Vertices: Connected by an edge
+- Degree: Number of edges connected to a vertex
+  - Vertex 1: degree = 2 (connected to 2, 3)
+- Path: Sequence of edges connecting vertices
+- Cycle: Path that starts and ends at same vertex
+```
+
+---
+
+### 2️⃣ **Graph Types**
+
+#### **Directed Graph (Digraph)**
+Edges have direction (arrow from one vertex to another).
+
+```
+1 → 2
+↓   ↓
+3 → 4
+```
+
+---
+
+#### **Undirected Graph**
+Edges have no direction (bidirectional).
+
+```
+1 ── 2
+│    │
+3 ── 4
+```
+
+---
+
+#### **Weighted Graph**
+Edges have weights (cost, distance, etc.).
+
+```
+   5
+1 ─── 2
+6│    │3
+ │    │
+ 3 ── 4
+   2
+```
+
+---
+
+#### **Unweighted Graph**
+All edges have same weight (or weight = 1).
+
+---
+
+### 3️⃣ **Graph Representations**
+
+#### **Adjacency Matrix**
+2D array where matrix[i][j] = 1 if edge exists, 0 otherwise.
+
+```
+Graph:        Matrix:
+  1 ──── 2      1 2 3 4
+  │      │    1 0 1 1 0
+  3 ──── 4    2 1 0 0 1
+             3 1 0 0 1
+             4 0 1 1 0
+
+Space: O(V²)
+Edge lookup: O(1)
+Best for: Dense graphs
+```
+
+---
+
+#### **Adjacency List**
+Array of LinkedLists where each index stores neighbors.
+
+```
+Graph:        List:
+  1 ──── 2    1: [2, 3]
+  │      │    2: [1, 4]
+  3 ──── 4    3: [1, 4]
+             4: [2, 3]
+
+Space: O(V + E)
+Edge lookup: O(degree)
+Best for: Sparse graphs
+```
+
+---
+
+### 4️⃣ **Implementation using Adjacency List**
+
+```java
+import java.util.ArrayList;
+
+public class GraphBasics {
+
+    public class Edge {
+        int src;
+        int dest;
+
+        public Edge(int src, int dest) {
+            this.src = src;
+            this.dest = dest;
+        }
+    }
+
+    public void createGraph(ArrayList<Edge>[] graph) {
+        // Initialize adjacency list
+        for (int i = 0; i < graph.length; i++) {
+            graph[i] = new ArrayList<>();
+        }
+
+        // Add undirected edges
+        graph[0].add(new Edge(0, 1));
+        graph[0].add(new Edge(0, 2));
+
+        graph[1].add(new Edge(1, 0));
+        graph[1].add(new Edge(1, 3));
+
+        graph[2].add(new Edge(2, 0));
+        graph[2].add(new Edge(2, 3));
+        graph[2].add(new Edge(2, 4));
+
+        graph[3].add(new Edge(3, 1));
+        graph[3].add(new Edge(3, 2));
+        graph[3].add(new Edge(3, 4));
+
+        graph[4].add(new Edge(4, 2));
+        graph[4].add(new Edge(4, 3));
+    }
+
+    public void printGraph(ArrayList<Edge>[] graph) {
+        for (int i = 0; i < graph.length; i++) {
+            System.out.print("Node " + i + " → ");
+            for (Edge e : graph[i]) {
+                System.out.print(e.dest + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public static void main(String[] args) {
+        int vertices = 5;
+        ArrayList<Edge>[] graph = new ArrayList[vertices];
+
+        GraphBasics gb = new GraphBasics();
+        gb.createGraph(graph);
+        gb.printGraph(graph);
+    }
+}
+```
+
+**Output:**
+```
+Node 0 → 1 2
+Node 1 → 0 3
+Node 2 → 0 3 4
+Node 3 → 1 2 4
+Node 4 → 2 3
+```
+
+</details>
+
+---
+
+<details open>
+<summary><h3>🔍 Breadth-First Search (BFS)</h3></summary>
+
+> **BFS** explores graph level by level using a queue, visiting all neighbors before going deeper.
+
+### Implementation
+
+```java
+import java.util.ArrayList;
+import java.util.LinkedList;
+import java.util.Queue;
+
+public class BFS {
+
+    public class Edge {
+        int src;
+        int dest;
+
+        public Edge(int src, int dest) {
+            this.src = src;
+            this.dest = dest;
+        }
+    }
+
+    public void bfs(ArrayList<Edge>[] graph) {
+        Queue<Integer> q = new LinkedList<>();
+        int V = graph.length;
+        boolean[] visited = new boolean[V];
+
+        q.add(0);  // Start from vertex 0
+
+        while(!q.isEmpty()) {
+            int temp = q.remove();
+
+            if(visited[temp] == false) {
+                System.out.println(temp);
+                visited[temp] = true;
+
+                for (int i = 0; i < graph[temp].size(); i++) {
+                    Edge e = graph[temp].get(i);
+                    q.add(e.dest);
+                }
+            }
+        }
+    }
+
+    public static void main(String[] args) {
+        int vertices = 5;
+        ArrayList<Edge>[] graph = new ArrayList[vertices];
+
+        BFS bfs = new BFS();
+        // Create graph (same as before)
+        
+        System.out.println("BFS starting from vertex 0:");
+        bfs.bfs(graph);
+    }
+}
+```
+
+**Output Example:**
+```
+BFS starting from vertex 0:
+0
+1
+2
+3
+4
+```
+
+**Complexity:** O(V + E) where V = vertices, E = edges
+
+</details>
+
+---
+
+<details open>
+<summary><h3>📈 Dynamic Programming Fundamentals</h3></summary>
+
+> **Dynamic Programming (DP)** solves problems by breaking them into overlapping subproblems and storing results to avoid recomputation.
+
+### 1️⃣ **Fibonacci Problem**
+
+Classic DP example showing three approaches.
+
+---
+
+#### **Approach 1: Basic Recursion (Exponential - SLOW)**
+
+```java
+public class FibonacciBasic {
+    
+    public static int fibonacci(int n) {
+        if (n <= 1)
+            return n;
+        
+        return fibonacci(n - 1) + fibonacci(n - 2);
+    }
+    
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println(fibonacci(n));  // 8
+    }
+}
+```
+
+**Dry Run: fibonacci(5)**
+
+```
+fib(5) = fib(4) + fib(3)
+       = (fib(3) + fib(2)) + (fib(2) + fib(1))
+       = ((fib(2) + fib(1)) + (fib(1) + fib(0))) + ((fib(1) + fib(0)) + fib(1))
+       = (((fib(1) + fib(0)) + 1) + (1 + 0)) + ((1 + 0) + 1)
+       = (((1 + 0) + 1) + (1 + 0)) + ((1 + 0) + 1)
+       = ((1 + 1) + 1) + (1 + 1)
+       = 5
+
+Result: 5 ✅
+```
+
+**Problem:** Many overlapping subproblems!
+```
+fib(5) calls fib(4) and fib(3)
+fib(4) calls fib(3) and fib(2)
+fib(3) is calculated MULTIPLE times (inefficient!)
+```
+
+**Complexity:** O(2^n) - Exponential (VERY SLOW!)
+
+---
+
+#### **Approach 2: Memoization (Top-Down DP) - FAST**
+
+Store results of subproblems to avoid recomputation.
+
+```java
+public class FibonacciMemoization {
+    
+    public static int fibonacci(int n, int[] dp) {
+        // Base case
+        if (n <= 1)
+            return n;
+        
+        // If already computed, return from dp array
+        if (dp[n] != 0) {
+            return dp[n];
+        }
+        
+        // Compute and store in dp array
+        dp[n] = fibonacci(n - 1, dp) + fibonacci(n - 2, dp);
+        
+        return dp[n];
+    }
+    
+    public static void main(String[] args) {
+        int n = 6;
+        int[] dp = new int[n + 1];
+        
+        System.out.println(fibonacci(n, dp));  // 8
+        System.out.println(fibonacci(3, dp));  // 3 (fast - already computed!)
+    }
+}
+```
+
+**Dry Run: fibonacci(6, dp)**
+
+```
+dp array initialized: [0, 0, 0, 0, 0, 0, 0]
+
+fib(6, dp):
+  fib(5, dp):
+    fib(4, dp):
+      fib(3, dp):
+        fib(2, dp):
+          fib(1, dp): return 1 → dp[1] = 1
+          fib(0, dp): return 0 → dp[0] = 0
+          dp[2] = 1 + 0 = 1 → return 1
+        fib(1, dp): dp[1] exists! return 1 (no recalculation)
+        dp[3] = 1 + 1 = 2 → return 2
+      fib(2, dp): dp[2] exists! return 1
+      dp[4] = 2 + 1 = 3 → return 3
+    fib(3, dp): dp[3] exists! return 2
+    dp[5] = 3 + 2 = 5 → return 5
+  fib(4, dp): dp[4] exists! return 3
+  dp[6] = 5 + 3 = 8 → return 8
+
+Final dp array: [0, 1, 1, 2, 3, 5, 8]
+Result: 8 ✅
+```
+
+**Advantages:**
+- ✅ Each subproblem computed only once
+- ✅ Much faster than basic recursion
+- ✅ Natural recursive structure preserved
+
+**Complexity:** O(n) time, O(n) space
+
+---
+
+#### **Approach 3: Tabulation (Bottom-Up DP) - FASTEST**
+
+Build solution iteratively from smallest subproblems to largest.
+
+```java
+public class FibonacciTabulation {
+    
+    public static int fibonacci(int n) {
+        // Base case
+        if (n <= 1)
+            return n;
+        
+        // Create dp array to store results
+        int[] dp = new int[n + 1];
+        dp[0] = 0;
+        dp[1] = 1;
+        
+        // Build up from smallest to largest
+        for (int i = 2; i <= n; i++) {
+            dp[i] = dp[i - 1] + dp[i - 2];
+        }
+        
+        return dp[n];
+    }
+    
+    public static void main(String[] args) {
+        int n = 6;
+        System.out.println(fibonacci(n));  // 8
+    }
+}
+```
+
+**Dry Run: fibonacci(6)**
+
+```
+Initialize: dp = [0, 1, 0, 0, 0, 0, 0]
+
+i=2: dp[2] = dp[1] + dp[0] = 1 + 0 = 1
+     dp = [0, 1, 1, 0, 0, 0, 0]
+
+i=3: dp[3] = dp[2] + dp[1] = 1 + 1 = 2
+     dp = [0, 1, 1, 2, 0, 0, 0]
+
+i=4: dp[4] = dp[3] + dp[2] = 2 + 1 = 3
+     dp = [0, 1, 1, 2, 3, 0, 0]
+
+i=5: dp[5] = dp[4] + dp[3] = 3 + 2 = 5
+     dp = [0, 1, 1, 2, 3, 5, 0]
+
+i=6: dp[6] = dp[5] + dp[4] = 5 + 3 = 8
+     dp = [0, 1, 1, 2, 3, 5, 8]
+
+Result: dp[6] = 8 ✅
+```
+
+**Advantages:**
+- ✅ No recursion overhead
+- ✅ Iterative approach
+- ✅ Very efficient
+- ✅ Easy to understand flow
+
+**Complexity:** O(n) time, O(n) space
+
+---
+
+### 2️⃣ **Fibonacci - Approach Comparison**
+
+| Aspect | Recursion | Memoization | Tabulation |
+|:-------|:---------:|:-----------:|:----------:|
+| **Time** | O(2^n) | O(n) | O(n) |
+| **Space** | O(n) stack | O(n) dp array | O(n) dp array |
+| **Speed** | VERY SLOW ❌ | FAST ✅ | FASTEST ✅✅ |
+| **Simplicity** | Simple | Moderate | Moderate |
+| **When to use** | Learning | Medium problems | Large problems |
+| **# of calls** | Exponential | Linear | Linear |
+
+**For n=40:**
+- Recursion: Takes MINUTES
+- Memoization: Takes MILLISECONDS
+- Tabulation: Takes MILLISECONDS
+
+</details>
+
+---
+
+## ✅ DAY 10 - Problems Covered
+
+### 📋 **Graphs & Dynamic Programming**
+
+| # | Problem | Difficulty | Concept | Status |
+|:-:|:--------|:----------:|:--------|:------:|
+| 1 | Graph Terminology | 🟢 Easy | Vertices, edges, degree | ✅ |
+| 2 | Graph Types | 🟢 Easy | Directed, undirected, weighted | ✅ |
+| 3 | Adjacency Matrix | 🟡 Medium | 2D array representation | ✅ |
+| 4 | Adjacency List | 🟡 Medium | Array of LinkedLists | ✅ |
+| 5 | Graph Creation | 🟡 Medium | Building graph structure | ✅ |
+| 6 | Breadth-First Search | 🟡 Medium | BFS traversal | ✅ |
+| 7 | Fibonacci Recursion | 🟢 Easy | Basic recursive approach | ✅ |
+| 8 | Fibonacci Memoization | 🟡 Medium | Top-down DP | ✅ |
+| 9 | Fibonacci Tabulation | 🟡 Medium | Bottom-up DP | ✅ |
+| 10 | DP Approach Comparison | 🟡 Medium | Optimization analysis | ✅ |
+
+---
+
+## 🎓 Complete DSA Training Summary
+
+### 📊 Overall Progress
+
+```
+Total Days Completed: 10 / 10 ✅✅✅
+Total Topics Covered: 50+ ✅
+Total Problems Solved: 100+ ✅
+Total Algorithms: 40+ ✅
+
+Status: TRAINING COMPLETED 🎉
+```
+
+### 🏆 Key Achievements
+
+- ✅ Mastered Collections Framework (Day 1-2)
+- ✅ Advanced Techniques (Two Pointers, Sliding Window, Comparators) - Day 3
+- ✅ Pattern Matching & Recursion - Day 4
+- ✅ Backtracking & LinkedList Variants - Day 5
+- ✅ Stack Implementation & Applications - Day 6
+- ✅ Notation Conversions & Queue Types - Day 7
+- ✅ Binary Tree Structures & Traversals - Day 8
+- ✅ Binary Search Tree Operations - Day 9
+- ✅ Graph Basics & Dynamic Programming - Day 10
+
+### 💡 Core Concepts Mastered
+
+1. **Data Structures:** Arrays, ArrayList, LinkedList, Stack, Queue, Tree, BST, Graph
+2. **Algorithms:** Sorting (Quick Sort), Searching (BST), Traversals (DFS/BFS), DP
+3. **Techniques:** Two Pointers, Sliding Window, Backtracking, Memoization, Tabulation
+4. **Complexity Analysis:** Time & Space for all major algorithms
+5. **Problem Solving:** From basic to advanced interview questions
+
+### 🚀 Next Steps (Optional Advanced Topics)
+
+- Advanced Tree Structures (AVL, Red-Black Trees)
+- More DP Problems (LIS, LCS, Knapsack)
+- Advanced Graph Algorithms (Dijkstra, Floyd-Warshall, DFS)
+- Greedy Algorithms
+- Advanced String Algorithms
+
+---
+
+## 📚 Quick Reference - All Days at a Glance
+
+| Day | Topic | Key Algorithms | Status |
+|:-:|:--------|:--------|:------:|
+| 1 | Collections & Arrays | Move Zeroes, Remove Duplicates | ✅ |
+| 2 | Set & Map | HashSet, HashMap, Frequency Counting | ✅ |
+| 3 | Queue & Techniques | Two Pointers, Sliding Window, Comparators | ✅ |
+| 4 | Recursion & Patterns | RegEx, Factorial, Permutation, Quick Sort | ✅ |
+| 5 | Backtracking & LL | Maze Paths, LinkedList variants | ✅ |
+| 6 | Stack | Valid Parentheses, Stack implementations | ✅ |
+| 7 | Notation & Queue | Infix-Postfix, Circular Queue | ✅ |
+| 8 | Binary Trees | Traversals (Pre/In/Post), Height, Sum | ✅ |
+| 9 | BST | Insert, Search, Delete, InOrder Successor | ✅ |
+| 10 | Graphs & DP | BFS, Fibonacci (Memo+Tabulation) | ✅ |
+
+---
+
+
 
 ## 📝 Important Code Snippets
 
@@ -3252,16 +3574,10 @@ import java.util.Arrays;
 import java.util.*;
 ```
 
+
 ---
 
-## 🚀 Next Steps
-
-1. **Review Day 4** - Re-read RegEx and Recursion materials
-2. **Practice RegEx** - Validate emails, phones, URLs on your own data
-3. **Trace Recursion** - Dry run recursive functions on paper
-4. **Solve Problems** - Implement factorial, permutation, combination
-5. **Code QuickSort** - Implement and trace on different arrays
-6. **Prepare Day 5** - Review LinkedList concepts before next session
+***🎊 Congratulations! You have completed the comprehensive Java DSA training! 🎊***
 
 ---
 
@@ -3297,3 +3613,7 @@ Code every day, solve problems regularly, and success will follow!
 ![NMIMS](https://img.shields.io/badge/NMIMS%20Engineering-Excellence-green?style=flat-square)
 
 </div>
+
+---
+
+
